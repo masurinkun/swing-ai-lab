@@ -1,0 +1,1 @@
+recommendation_date,stock_code,stock_name,evaluation_date,entry_triggered,assumed_entry_price,return_5d,return_10d,return_20d,mfe_pct,mae_pct,target1_reached,target2_reached,stop_reached,first_event,result,failure_reason,report_file
