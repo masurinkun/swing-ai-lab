@@ -17,11 +17,13 @@
 
 ## このプロジェクトでやらないこと
 
-- アプリや Web サービスの開発。
+- アプリや動的 Web サービスの開発。
 - 自動売買。
 - 証券口座への接続。
 - 注文執行。
-- API サーバー、Web 画面、データベースの作成。
+- API サーバー、データベースの作成。
+
+分析記録を閲覧するための読み取り専用静的サイトは例外とし、GitHub Pages で公開します。サイトの表示内容は `history/`、`rules/`、`reports/` から自動生成し、HTML を正本にはしません。
 
 ## Codex の役割
 
@@ -52,8 +54,27 @@ Codex は分析補助者として、調査、候補選定、記録、評価、�
 │   ├── weekly_screening.md
 │   ├── weekly_review.md
 │   └── rule_improvement.md
+├── scripts/
+│   └── build_site.py
+├── site/
+│   └── assets/
+├── .github/workflows/
+│   └── pages.yml
 └── archive/
 ```
+
+## 静的レポートサイト
+
+公開サイトでは、最新の推薦銘柄、選定理由、売買計画、事後評価、週次・月次レポート、現行ルール、改善履歴を閲覧できます。PC とスマートフォンに対応し、データが未登録の指標は推測せず「評価待ち」と表示します。
+
+ローカルで生成する場合は次を実行します。
+
+```bash
+python3 scripts/build_site.py
+python3 -m http.server 8000 --directory _site
+```
+
+GitHub では、`main` ブランチへの push を契機に GitHub Actions が `_site/` 相当の成果物を生成し、GitHub Pages へ公開します。初回のみリポジトリの `Settings > Pages > Build and deployment > Source` で `GitHub Actions` を選択します。
 
 ## 毎週の運用フロー
 
