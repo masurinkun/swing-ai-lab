@@ -1,1 +1,4 @@
 recommendation_date,stock_code,stock_name,evaluation_date,entry_triggered,assumed_entry_price,return_5d,return_10d,return_20d,mfe_pct,mae_pct,target1_reached,target2_reached,stop_reached,first_event,result,failure_reason,report_file
+2026-07-21,2503,キリンホールディングス,2026-08-10,true,2897,3.49,-1.42,,9.11,-1.10,true,false,false,Target1（2026-07-29）,勝ち,なし（予定退出までにTarget1到達）,reports/reviews/2026-08-10.md
+2026-07-21,9433,KDDI,2026-08-10,true,2861,4.61,0.44,,9.09,-0.72,true,false,false,Target1（2026-07-29）,勝ち,なし（予定退出までにTarget1到達）,reports/reviews/2026-08-10.md
+2026-07-21,2269,明治ホールディングス,2026-08-10,true,3765,1.83,-3.03,,7.22,0.00,true,false,false,Target1（2026-07-29）,勝ち,なし（予定退出までにTarget1到達）,reports/reviews/2026-08-10.md
