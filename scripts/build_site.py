@@ -538,7 +538,7 @@ class SiteBuilder:
 <div class="results-metrics">
   <div><span>評価完了</span><strong>{len(completed)}</strong><small>件</small></div>
   <div><span>勝率</span><strong>{win_rate}</strong><small>勝敗確定分</small></div>
-  <div><span>20日平均</span><strong>{format_percent(mean(returns))}</strong><small>記録済みのみ</small></div>
+  <div><span>20日平均</span><strong>{format_percent(mean(returns)) if returns else '—'}</strong><small>記録済みのみ</small></div>
   <div><span>Profit Factor</span><strong>{profit_factor}</strong><small>{'最新週次集計' if latest_weekly else '週次集計待ち'}</small></div>
 </div>""" if completed else f"""
 <div class="results-metrics">
