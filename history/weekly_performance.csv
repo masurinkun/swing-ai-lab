@@ -1,3 +1,4 @@
 review_date,recommendation_week,rules_version,recommendations_count,entries_count,no_entry_count,wins,losses,win_rate,average_return,median_return,average_gain,average_loss,payoff_ratio,profit_factor,expectancy,max_gain,max_loss,average_mfe,average_mae,target_reach_rate,stop_reach_rate,notes,report_file
 2026-08-10,2026-07-21,v0.1.0,3,3,0,3,0,100.00,2.26,1.47,2.26,,,N/A,2.26,4.86,0.47,8.48,-0.61,100.00,0.00,"予定退出時リターンで集計。全3件がTarget1先行、損失なしのためPayoff RatioとProfit Factorは算定不能。20営業日固定リターンは2026-08-24にevaluations.csvへ追記",reports/reviews/2026-08-10.md
-2026-08-24,2026-08-10,v0.1.1,3,0,3,0,0,,,,,,,N/A,,,,,,,,"5営業日時点の暫定評価。10営業日・20営業日は未到来。3件とも反発確認トリガー未成立で未約定",reports/reviews/2026-08-24.md
+2026-08-31,2026-08-10,v0.1.1,3,0,3,0,0,,,,,,,N/A,,,,,,,,"10営業日時点の暫定評価。20営業日は未到来。3件とも反発確認トリガー未成立で未約定",reports/reviews/2026-08-31.md
+2026-08-31,2026-08-17,v0.1.1,3,0,3,0,0,,,,,,,N/A,,,,,,,,"5営業日時点の暫定評価。三菱電機とMUFGはEntry成立前にStop水準を割り無効、オリエンタルランドも翌営業日始値が帯外で未約定",reports/reviews/2026-08-31.md
