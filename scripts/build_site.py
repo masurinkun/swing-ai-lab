@@ -6,12 +6,14 @@ from __future__ import annotations
 import argparse
 import csv
 import html
+import os
 import re
 import shutil
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
 from statistics import mean
+from typing import Callable
 from zoneinfo import ZoneInfo
 
 
@@ -94,7 +96,9 @@ def slugify(value: str) -> str:
     return "section"
 
 
-def inline_markdown(value: str) -> str:
+def inline_markdown(
+    value: str, link_resolver: Callable[[str], str] | None = None
+) -> str:
     escaped = html.escape(value, quote=False)
     code_tokens: list[str] = []
 
@@ -103,14 +107,23 @@ def inline_markdown(value: str) -> str:
         return f"@@CODE{len(code_tokens) - 1}@@"
 
     escaped = re.sub(r"`([^`]+)`", stash_code, escaped)
-    escaped = re.sub(
-        r"\[([^\]]+)\]\((https?://[^)]+)\)",
-        lambda match: (
-            f'<a href="{html.escape(html.unescape(match.group(2)), quote=True)}" '
-            f'target="_blank" rel="noopener noreferrer">{match.group(1)}</a>'
-        ),
-        escaped,
-    )
+    def render_link(match: re.Match[str]) -> str:
+        href = html.unescape(match.group(2))
+        is_external = bool(re.match(r"https?://", href))
+        is_internal = href.startswith(("#", "/", "./", "../")) and not href.startswith("//")
+        if not is_external and not is_internal:
+            return match.group(0)
+        if link_resolver:
+            href = link_resolver(href)
+        escaped_href = html.escape(href, quote=True)
+        if is_external:
+            return (
+                f'<a href="{escaped_href}" target="_blank" '
+                f'rel="noopener noreferrer">{match.group(1)}</a>'
+            )
+        return f'<a href="{escaped_href}">{match.group(1)}</a>'
+
+    escaped = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", render_link, escaped)
     escaped = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", escaped)
     escaped = re.sub(r"(?<!\*)\*([^*]+)\*(?!\*)", r"<em>\1</em>", escaped)
     for index, token in enumerate(code_tokens):
@@ -127,7 +140,9 @@ def table_cells(line: str) -> list[str]:
     return [cell.strip() for cell in line.strip().strip("|").split("|")]
 
 
-def markdown_to_html(markdown: str) -> str:
+def markdown_to_html(
+    markdown: str, link_resolver: Callable[[str], str] | None = None
+) -> str:
     lines = markdown.splitlines()
     output: list[str] = []
     paragraph: list[str] = []
@@ -139,7 +154,9 @@ def markdown_to_html(markdown: str) -> str:
 
     def flush_paragraph() -> None:
         if paragraph:
-            output.append(f"<p>{inline_markdown(' '.join(part.strip() for part in paragraph))}</p>")
+            output.append(
+                f"<p>{inline_markdown(' '.join(part.strip() for part in paragraph), link_resolver)}</p>"
+            )
             paragraph.clear()
 
     def close_list() -> None:
@@ -179,11 +196,11 @@ def markdown_to_html(markdown: str) -> str:
                 rows.append(table_cells(lines[index]))
                 index += 1
             output.append('<div class="table-scroll"><table><thead><tr>')
-            output.extend(f"<th>{inline_markdown(cell)}</th>" for cell in headers)
+            output.extend(f"<th>{inline_markdown(cell, link_resolver)}</th>" for cell in headers)
             output.append("</tr></thead><tbody>")
             for row in rows:
                 output.append("<tr>")
-                output.extend(f"<td>{inline_markdown(cell)}</td>" for cell in row)
+                output.extend(f"<td>{inline_markdown(cell, link_resolver)}</td>" for cell in row)
                 output.append("</tr>")
             output.append("</tbody></table></div>")
             continue
@@ -198,7 +215,7 @@ def markdown_to_html(markdown: str) -> str:
             heading_counts[base_slug] += 1
             suffix = f"-{heading_counts[base_slug]}" if heading_counts[base_slug] > 1 else ""
             output.append(
-                f'<h{level} id="{base_slug}{suffix}">{inline_markdown(text)}</h{level}>'
+                f'<h{level} id="{base_slug}{suffix}">{inline_markdown(text, link_resolver)}</h{level}>'
             )
             index += 1
             continue
@@ -213,14 +230,14 @@ def markdown_to_html(markdown: str) -> str:
                 list_type = requested
                 output.append(f"<{list_type}>")
             content = (unordered or ordered).group(1)
-            output.append(f"<li>{inline_markdown(content)}</li>")
+            output.append(f"<li>{inline_markdown(content, link_resolver)}</li>")
             index += 1
             continue
 
         if stripped.startswith("> "):
             flush_paragraph()
             close_list()
-            output.append(f"<blockquote>{inline_markdown(stripped[2:])}</blockquote>")
+            output.append(f"<blockquote>{inline_markdown(stripped[2:], link_resolver)}</blockquote>")
             index += 1
             continue
 
@@ -410,12 +427,27 @@ class SiteBuilder:
                 self.report_index[relative_source] = f"reports/{folder}/{source.stem}/"
                 markdown = read_text(source)
                 title = markdown_title(markdown, source.stem)
+
+                def resolve_report_link(href: str) -> str:
+                    path_part, separator, fragment = href.partition("#")
+                    if not path_part.endswith(".md"):
+                        return href
+                    target = (source.parent / path_part).resolve()
+                    if not target.is_relative_to(ROOT) or not target.is_file():
+                        return href
+                    target_dir = target.relative_to(ROOT).with_suffix("")
+                    relative_href = os.path.relpath(target_dir, Path(output_path).parent)
+                    resolved_href = f"{Path(relative_href).as_posix()}/"
+                    if separator:
+                        resolved_href += f"#{fragment}"
+                    return resolved_href
+
                 article = f"""
 <section class="page-hero page-hero--compact">
   <div class="shell"><p class="eyebrow">REPORT / {folder.upper()}</p><h1>{html.escape(title)}</h1><p>正本ファイル: {html.escape(relative_source)}</p></div>
 </section>
 <div class="shell article-layout">
-  <article class="prose report-prose">{markdown_to_html(markdown)}</article>
+  <article class="prose report-prose">{markdown_to_html(markdown, resolve_report_link)}</article>
   <aside class="article-aside"><div class="aside-card"><span>記録の扱い</span><p>このページは正本のMarkdownから自動生成されています。</p><a class="text-link" href="../../../reports/">レポート一覧へ →</a></div></aside>
 </div>"""
                 self.page(
