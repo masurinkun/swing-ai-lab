@@ -24,6 +24,11 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Check research ledgers and regression cases
+        run: |
+          python3 scripts/research_checks.py
+          python3 -m unittest discover -s scripts -p 'test_*.py'
+
       - name: Build static site
         run: python3 scripts/build_site.py
 

@@ -1,0 +1,9 @@
+stock_code,date,open,high,low,close,volume,price_basis,source_url,retrieved_at,coverage
+8058,2026-09-25,4841,4875,4816,4859,7325300,source_displayed_ohlcv,https://finance.yahoo.co.jp/quote/8058.T/history,2026-10-09T15:26:02+09:00,audit_excerpt_only; corporate_actions_not_fully_verified
+8058,2026-09-28,4870,4887,4815,4818,8671000,source_displayed_ohlcv,https://finance.yahoo.co.jp/quote/8058.T/history,2026-10-09T15:26:02+09:00,audit_excerpt_only; corporate_actions_not_fully_verified
+8058,2026-09-29,4740,4743,4620,4637,9703500,source_displayed_ohlcv,https://finance.yahoo.co.jp/quote/8058.T/history,2026-10-09T15:26:02+09:00,audit_excerpt_only; corporate_actions_not_fully_verified
+8058,2026-10-08,4587,4605,4513,4590,8768100,source_displayed_ohlcv,https://finance.yahoo.co.jp/quote/8058.T/history,2026-10-09T15:26:02+09:00,audit_excerpt_only; corporate_actions_not_fully_verified
+6098,2026-10-05,16500,16735,16450,16635,2917200,source_displayed_ohlcv,https://finance.yahoo.co.jp/quote/6098.T/history,2026-10-09T15:26:02+09:00,audit_excerpt_only; corporate_actions_not_fully_verified
+6098,2026-10-06,16920,17135,16815,16975,3364700,source_displayed_ohlcv,https://finance.yahoo.co.jp/quote/6098.T/history,2026-10-09T15:26:02+09:00,audit_excerpt_only; corporate_actions_not_fully_verified
+6098,2026-10-07,16975,17125,16840,17000,3087500,source_displayed_ohlcv,https://finance.yahoo.co.jp/quote/6098.T/history,2026-10-09T15:26:02+09:00,audit_excerpt_only; corporate_actions_not_fully_verified
+6098,2026-10-08,17400,17600,17145,17200,3998900,source_displayed_ohlcv,https://finance.yahoo.co.jp/quote/6098.T/history,2026-10-09T15:26:02+09:00,audit_excerpt_only; corporate_actions_not_fully_verified

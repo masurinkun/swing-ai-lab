@@ -1,0 +1,35 @@
+{
+  "experiment_id": "EXP-2026-10-09",
+  "registered_at": "2026-10-09T15:26:02+09:00",
+  "purpose": "public hypothetical benchmark; unrelated to personal account balances",
+  "protocol_id": "EP-1",
+  "initial_capital_jpy": 1000000,
+  "cash_only": true,
+  "max_position_fraction": 0.25,
+  "per_trade_risk_fraction": 0.005,
+  "total_reserved_risk_fraction": 0.02,
+  "lot_size": "per instrument; verify each time",
+  "cost_models": [
+    {
+      "id": "hypothetical_base",
+      "fee_bps_each_side": 10,
+      "slippage_bps_each_side": 10
+    },
+    {
+      "id": "hypothetical_stress",
+      "fee_bps_each_side": 10,
+      "slippage_bps_each_side": 25
+    }
+  ],
+  "tax_basis": "pretax",
+  "dividend_basis": "gross accrued on entitlement; unknown blocks verified NAV",
+  "arms": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "first_eligible_recommendation": "strictly after registration; first entry no earlier than next JPX session",
+  "status": "awaiting_first_cohort",
+  "notes": "Cost rates and risk caps are experimental assumptions, not observed fees or optimal trading rules. B/C fixed-hold arms share capital/allocation/cost constraints but do not claim the A stop-based loss cap."
+}

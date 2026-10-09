@@ -12,9 +12,9 @@ import shutil
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
-from statistics import mean
 from typing import Callable
 from zoneinfo import ZoneInfo
+from research_checks import aggregate_trades, validate
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -291,7 +291,8 @@ class SiteBuilder:
         self.output = output
         self.recommendations = read_csv(ROOT / "history/recommendations.csv")
         self.evaluations = read_csv(ROOT / "history/evaluations.csv")
-        self.weekly = read_csv(ROOT / "history/weekly_performance.csv")
+        self.audits = read_csv(ROOT / "history/audit.csv")
+        self.trades = read_csv(ROOT / "history/trade_results.csv")
         self.markets = read_csv(ROOT / "history/market_environment.csv")
         self.rule_markdown = read_text(ROOT / "rules/current_rules.md")
         self.improvement_markdown = read_text(ROOT / "rules/improvement_history.md")
@@ -394,7 +395,8 @@ class SiteBuilder:
     def recommendation_card(self, row: dict[str, str], prefix: str) -> str:
         evaluation = self.evaluation_for(row)
         result = evaluation.get("result", "") if evaluation else ""
-        status_label = result or ("評価中" if evaluation else "評価待ち")
+        legacy = any(a.get("recommendation_date") == row.get("recommendation_date") and a.get("stock_code") == row.get("stock_code") and a.get("status") != "verified" for a in self.audits)
+        status_label = "監査保留・旧計画" if legacy else (result or "評価待ち")
         tone = result_tone(status_label)
         report_href = self.report_url(row.get("report_file", ""), prefix)
         score = safe_float(row.get("score")) or 0
@@ -476,7 +478,7 @@ class SiteBuilder:
         latest = self.latest_recommendations()
         latest_date = latest[0].get("recommendation_date", "") if latest else ""
         market = self.latest_market()
-        evaluation_count = len([row for row in self.evaluations if row.get("result", "").strip()])
+        evaluation_count = sum(r.get("audit_status") == "verified" and r.get("status") == "closed" for r in self.trades)
         cards = "".join(self.recommendation_card(row, "") for row in latest)
         if not cards:
             cards = self.empty_state("現在、公開中の推薦はありません", "条件が弱い週は無理に候補を追加しません。")
@@ -496,18 +498,18 @@ class SiteBuilder:
         body = f"""
 <section class="home-hero">
   <div class="shell home-hero__grid">
-    <div class="hero-copy"><p class="eyebrow">RESEARCH LEDGER · JP EQUITIES</p><h1>判断の根拠を残し、<br><em>結果から改善する。</em></h1><p class="lead">日本株の1〜3週間スイング候補を、選定・検証・改善まで一貫して記録する公開リサーチ台帳です。</p><div class="hero-actions"><a class="button" href="recommendations/">最新の推薦を見る</a><a class="button button--ghost" href="reports/">レポートを読む</a></div></div>
+    <div class="hero-copy"><p class="eyebrow">RESEARCH LEDGER · JP EQUITIES</p><h1>判断の根拠を残し、<br><em>結果から改善する。</em></h1><p class="lead">日本株の1〜3週間スイング候補を、選定・検証・改善まで一貫して記録する公開リサーチ台帳です。</p><div class="hero-actions"><a class="button" href="recommendations/">選定記録を見る</a><a class="button button--ghost" href="reports/">レポートを読む</a></div></div>
     <div class="hero-panel">{market_body}<div class="as-of">基準日 <strong>{format_date(market.get('date', '')) if market else '—'}</strong></div></div>
   </div>
 </section>
 <section class="metric-band"><div class="shell metric-grid">
   <div><span>最新候補</span><strong>{len(latest)}</strong><small>銘柄</small></div>
-  <div><span>評価完了</span><strong>{evaluation_count}</strong><small>件</small></div>
+  <div><span>検証済み確定取引</span><strong>{evaluation_count}</strong><small>件</small></div>
   <div><span>現行ルール</span><strong class="metric-text">{html.escape(self.rule_version)}</strong><small>version</small></div>
   <div><span>推薦基準日</span><strong class="metric-text">{format_date(latest_date)}</strong><small>as of</small></div>
 </div></section>
 <section class="section shell">
-  <div class="section-heading"><div><p class="eyebrow">LATEST SELECTION</p><h2>最新の推薦銘柄</h2><p>{format_date(latest_date)} 選定。指定価格帯への到達と反発確認を前提とします。</p></div><a class="text-link" href="recommendations/">すべての推薦を見る →</a></div>
+  <div class="section-heading"><div><p class="eyebrow">LATEST SELECTION</p><h2>最新の選定記録</h2><p>{format_date(latest_date)} 時点の記録。監査保留の旧計画は再審査が必要です。現在の注文計画ではありません。</p></div><a class="text-link" href="recommendations/">すべての推薦を見る →</a></div>
   <div class="stock-grid">{cards}</div>
 </section>
 <section class="section section--tint"><div class="shell process-grid">
@@ -545,6 +547,7 @@ class SiteBuilder:
         body = f"""
 <section class="page-hero"><div class="shell"><p class="eyebrow">RECOMMENDATIONS</p><h1>推薦銘柄</h1><p>その時点で利用可能だった情報だけで選定した候補と、具体的な売買計画を記録しています。</p></div></section>
 <div class="shell page-content">
+  <p class="method-note">旧27推薦は監査保留です。検証済み成績に含めず、新規注文には最新情報での再審査が必要です。</p>
   <div class="toolbar"><label class="search"><span>銘柄を検索</span><input type="search" data-filter-search placeholder="銘柄名・コード・セクター" autocomplete="off"></label><div class="filter-buttons" aria-label="評価状態"><button class="is-active" data-filter="all">すべて</button><button data-filter="pending">評価待ち</button><button data-filter="positive">勝ち</button><button data-filter="negative">負け</button></div></div>
   <p class="filter-empty" hidden>条件に一致する銘柄はありません。</p>{content}
 </div>"""
@@ -558,47 +561,36 @@ class SiteBuilder:
         )
 
     def build_results(self) -> None:
-        completed = [row for row in self.evaluations if row.get("result", "").strip()]
-        wins = [row for row in completed if result_tone(row.get("result", "")) == "positive"]
-        losses = [row for row in completed if result_tone(row.get("result", "")) == "negative"]
-        returns = [value for row in completed for value in [safe_float(row.get("return_20d"))] if value is not None]
-        settled_count = len(wins) + len(losses)
-        win_rate = f"{len(wins) / settled_count * 100:.1f}%" if settled_count else "—"
-        latest_weekly = max(self.weekly, key=lambda row: row.get("review_date", "")) if self.weekly else None
-        profit_factor = format_number(latest_weekly.get("profit_factor"), 2) if latest_weekly else "—"
-        metrics = f"""
-<div class="results-metrics">
-  <div><span>評価完了</span><strong>{len(completed)}</strong><small>件</small></div>
-  <div><span>勝率</span><strong>{win_rate}</strong><small>勝敗確定分</small></div>
-  <div><span>20日平均</span><strong>{format_percent(mean(returns)) if returns else '—'}</strong><small>記録済みのみ</small></div>
-  <div><span>Profit Factor</span><strong>{profit_factor}</strong><small>{'最新週次集計' if latest_weekly else '週次集計待ち'}</small></div>
-</div>""" if completed else f"""
-<div class="results-metrics">
-  <div><span>評価完了</span><strong>0</strong><small>件</small></div>
-  <div><span>勝率</span><strong>—</strong><small>評価待ち</small></div>
-  <div><span>期待値</span><strong>—</strong><small>評価待ち</small></div>
-  <div><span>Profit Factor</span><strong>—</strong><small>評価待ち</small></div>
-</div>"""
-        if completed:
-            rows = []
-            for row in sorted(completed, key=lambda item: item.get("evaluation_date", ""), reverse=True):
-                result = row.get("result", "評価中")
-                rows.append(f"""<tr><td>{format_date(row.get('recommendation_date', ''))}</td><td><strong>{html.escape(row.get('stock_code', '—'))}</strong><br>{html.escape(row.get('stock_name', '—'))}</td><td>{badge(result, result_tone(result))}</td><td>{format_percent(row.get('return_5d'))}</td><td>{format_percent(row.get('return_10d'))}</td><td>{format_percent(row.get('return_20d'))}</td><td>{format_percent(row.get('mfe_pct'))}</td><td>{format_percent(row.get('mae_pct'))}</td></tr>""")
-            results_content = '<div class="table-scroll"><table><thead><tr><th>推薦日</th><th>銘柄</th><th>結果</th><th>5日</th><th>10日</th><th>20日</th><th>MFE</th><th>MAE</th></tr></thead><tbody>' + "".join(rows) + "</tbody></table></div>"
-        else:
-            results_content = self.empty_state("最初の事後評価を待っています", "推薦翌営業日以降の5・10・20営業日を確認後、結果がここに反映されます。")
-        body = f"""
-<section class="page-hero"><div class="shell"><p class="eyebrow">PERFORMANCE</p><h1>推薦結果</h1><p>勝率だけでなく、期待値、Profit Factor、MFE・MAEを継続して確認します。</p></div></section>
-<div class="shell page-content">{metrics}<section class="content-card"><div class="content-card__heading"><div><h2>評価履歴</h2><p>未取得データは推測せず空欄で残します。</p></div>{badge('未来情報を理由へ混入しない', 'neutral')}</div>{results_content}</section>
-<section class="method-note"><div><p class="eyebrow">EVALUATION POLICY</p><h2>評価の考え方</h2></div><div><p>日足だけでTargetとStopの同日到達順を特定できない場合は「順序不明」とします。推薦時点の理由と、推薦後に判明した結果を分離して記録します。</p></div></section></div>"""
-        self.page(
-            "results/index.html",
-            title="推薦結果",
-            description="推薦銘柄の5・10・20営業日リターン、MFE、MAE、勝敗を記録します。",
-            body=body,
-            active="results",
-            depth=1,
-        )
+        populations = aggregate_trades(self.trades)
+        closed = sum(g['count'] for g in populations)
+        pending = sum(r.get('status') in {'pending', 'open'} for r in self.trades)
+        ambiguous = sum(r.get('status') == 'ambiguous' for r in self.trades)
+        metrics = f"""<div class="results-metrics">
+<div><span>検証済み確定取引</span><strong>{closed}</strong><small>件・仮想取引</small></div>
+<div><span>新方式の評価中</span><strong>{pending}</strong><small>件</small></div>
+<div><span>新方式の判定不能</span><strong>{ambiguous}</strong><small>件</small></div>
+<div><span>旧推薦の監査保留</span><strong>{len(self.audits)}</strong><small>件・成績から除外</small></div></div>"""
+        rows = []
+        for g in populations:
+            rows.append(f"<tr><td>{html.escape(g['strategy'])} / {html.escape(g['protocol'])}<br>{html.escape(g['cost_model'])}</td><td>{g['start']}〜{g['end']}</td><td>{g['count']}</td><td>{format_percent(g['win_rate'])}</td><td>{format_percent(g['average_return'])}</td><td>{format_number(g['pf'],2)}</td><td>{format_number(g['pnl'],2)}</td></tr>")
+        verified = ('<div class="table-scroll"><table><thead><tr><th>戦略 / 方法 / 費用</th><th>取引期間</th><th>件数</th><th>勝率</th><th>平均取引リターン</th><th>PF</th><th>ネット損益・円</th></tr></thead><tbody>'+''.join(rows)+'</tbody></table></div>') if rows else self.empty_state('検証済み成績はまだありません', '勝率・PF・期待値は算定不能です。旧方式の5勝1敗は検証済みの運用成果として採用しません。')
+        legacy = []
+        recs = {(r['recommendation_date'],r['stock_code']):r for r in self.recommendations}
+        for a in self.audits:
+            r = recs[(a['recommendation_date'],a['stock_code'])]
+            legacy.append(f"<tr><td>{a['recommendation_date']}</td><td>{html.escape(r['stock_code'])}<br>{html.escape(r['stock_name'])}</td><td>{html.escape(a['legacy_result'])}（旧主張）</td><td>監査保留</td><td>{html.escape(a['required_evidence'])}</td></tr>")
+        body = f"""<section class="page-hero"><div class="shell"><p class="eyebrow">PERFORMANCE AUDIT</p><h1>推薦結果と検証状態</h1><p>同じ戦略・評価方法・コスト条件の検証済み確定取引だけを集計します。</p></div></section>
+<div class="shell page-content">{metrics}<section class="content-card"><h2>新方式の仮想取引成績</h2>{verified}<p>平均取引リターンは資金全体の収益率ではありません。配当・費用が不明の取引は集計対象外です。戦略間比較は同期間・同資金の月次レビューで行います。</p></section>
+<section class="method-note"><div><h2>2026年10月9日から評価方法を修正</h2></div><div><p>旧評価の約定時刻・価格条件・集計基準に不備を確認しました。元記録を保存して監査し、未検証の数字を成果として表示しません。</p><a href="../reports/experiments/2026-10-09/">監査と修正内容</a> / <a href="../rules/evaluation_protocol/">約定・集計方法</a> / <a href="../rules/experiment_protocol/">比較検証</a></div></section>
+<section class="content-card"><h2>旧推薦の監査一覧</h2><p>勝ち・負け・未約定は旧報告の主張です。すべて再検証対象であり、勝敗確定や評価完了を意味しません。</p><div class="table-scroll"><table><thead><tr><th>推薦日</th><th>銘柄</th><th>旧記録</th><th>現在の扱い</th><th>必要な証拠</th></tr></thead><tbody>{''.join(legacy)}</tbody></table></div></section></div>"""
+        self.page('results/index.html',title='推薦結果と検証状態',description='検証済み仮想取引と旧推薦の監査状態を分けて表示します。',body=body,active='results',depth=1)
+
+    def build_methodology(self) -> None:
+        for name in ['evaluation_protocol', 'experiment_protocol']:
+            markdown = read_text(ROOT / 'rules' / (name+'.md'))
+            title = markdown_title(markdown, name)
+            body = f'<section class="page-hero"><div class="shell"><h1>{html.escape(title)}</h1></div></section><div class="shell article-layout"><article class="prose">{markdown_to_html(markdown)}</article></div>'
+            self.page(f'rules/{name}/index.html',title=title,description=title,body=body,active='rules',depth=2)
 
     def all_report_records(self) -> list[tuple[str, str, str, str]]:
         records: list[tuple[str, str, str, str]] = []
@@ -650,7 +642,7 @@ class SiteBuilder:
         body = f"""
 <section class="page-hero"><div class="shell"><p class="eyebrow">RULES &amp; GOVERNANCE</p><h1>ルール・改善</h1><p>ルールは結果に合わせて都合よく書き換えず、十分な検証を経てバージョン管理します。</p></div></section>
 <div class="shell rules-summary"><div><span>現行バージョン</span><strong>{html.escape(self.rule_version)}</strong></div><div><span>採用に必要な標本</span><strong>20<small>件以上</small></strong></div><div><span>最低検証期間</span><strong>4<small>週間</small></strong></div></div>
-<div class="shell article-layout rules-layout"><article class="prose">{markdown_to_html(self.rule_markdown)}</article><aside class="article-aside"><div class="aside-card aside-card--sticky"><span>改善記録</span><p>採用済みの変更、検証中の候補、棄却済み案を確認できます。</p><a class="button button--dark" href="../improvements/">改善履歴を見る</a></div></aside></div>"""
+<div class="shell article-layout rules-layout"><article class="prose">{markdown_to_html(self.rule_markdown.replace("evaluation_protocol.md", "evaluation_protocol/").replace("experiment_protocol.md", "experiment_protocol/"))}</article><aside class="article-aside"><div class="aside-card aside-card--sticky"><span>改善記録</span><p>採用済みの変更、検証中の候補、棄却済み案を確認できます。</p><a class="button button--dark" href="../improvements/">改善履歴を見る</a></div></aside></div>"""
         self.page(
             "rules/index.html",
             title="現行ルール",
@@ -693,12 +685,16 @@ class SiteBuilder:
         )
 
     def build(self) -> None:
+        errors = validate(ROOT)
+        if errors:
+            raise ValueError("Ledger validation failed: " + "; ".join(errors))
         self.prepare()
         self.build_reports()
         self.build_home()
         self.build_recommendations()
         self.build_results()
         self.build_report_index()
+        self.build_methodology()
         self.build_rules()
         self.build_improvements()
         self.build_not_found()

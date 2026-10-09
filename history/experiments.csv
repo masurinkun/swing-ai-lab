@@ -1,0 +1,2 @@
+experiment_id,registered_date,start_date,status,protocol_id,configuration_file,report_file
+EXP-2026-10-09,2026-10-09,,awaiting_first_cohort,EP-1,rules/experiment_config.json,reports/experiments/2026-10-09.md

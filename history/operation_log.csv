@@ -1,0 +1,2 @@
+date,operation,status,elapsed_minutes,api_cost_jpy,missing_data,report_file
+2026-10-09,運用監査と評価方式改訂,implemented_pending_personal_risk_scope,,,過去全期間OHLCV・実費用・作業時間未計測,reports/experiments/2026-10-09.md

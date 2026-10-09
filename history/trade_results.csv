@@ -1,0 +1,1 @@
+trade_id,plan_id,recommendation_date,stock_code,strategy_id,protocol_id,cost_model_id,status,audit_status,entry_date,exit_date,entry_price,exit_price,shares,fees_jpy,slippage_jpy,dividend_jpy,source_file,notes

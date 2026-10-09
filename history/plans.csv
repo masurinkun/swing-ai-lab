@@ -1,0 +1,1 @@
+plan_id,recommendation_date,stock_code,strategy_id,protocol_id,cost_model_id,created_at,signal_date,signal_confirmed_at,order_date,entry_limit,stop_price,target_price,exit_deadline,shares,lot_size,order_type,source_file,status

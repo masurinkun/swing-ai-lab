@@ -99,3 +99,14 @@
 - 株価や推薦情報には基準日を表示し、投資助言ではない旨をサイト全体で明示する。
 - 公開前に、秘密情報、個人情報、API キーが生成物へ含まれていないことを確認する。
 - 週次スクリーニング自動化は、GitHub Pages のデプロイ成功と公開サイト上の当日レポート表示確認までを完了条件とする。
+
+## 2026-10-09以降の必須運用
+
+- 開始時の既存読込順の後、`rules/evaluation_protocol.md`、`rules/experiment_protocol.md`、`history/audit.csv`、`history/plans.csv`、`history/trade_results.csv` と非公開 `.local/operating_profile.json`（存在する場合）を読む。
+- 個人の資金・許容損失・口座条件は `.local/` だけへ保存し、Git・公開レポート・生成HTMLへ含めない。
+- 旧 `evaluations.csv` / `weekly_performance.csv` は監査保留。新結果は専用台帳へ記録し、旧勝敗を成果指標へ混ぜない。
+- 数値・約定・評価日の整合修正に最低20件の検証を要求しない。収益優位性に基づく戦略採用とは分ける。
+- 調査では元OHLCV・取得時刻・調整情報・URL・ハッシュを保存し、一次確認全件と見送り理由をCSVへ記録する。
+- 推薦前に単元・資金・同時注文リスク・手数料・注文可能性を照合。日中監視が必要な条件や未来情報を使う約定は禁止。
+- 毎日の確認は `prompts/daily_review.md`、月次集計は `prompts/monthly_review.md` を使う。自動実行スケジュールは明示依頼なしに増やさない。
+- 公開前は `python3 scripts/research_checks.py`、`python3 -m unittest discover -s scripts -p 'test_*.py'`、サイト生成・検証を行う。

@@ -1,6 +1,6 @@
 # swing-ai-lab
 
-日本株の「自己改善型スイングトレード分析プロジェクト」として運用するリポジトリです。目的は、1〜3週間程度のスイングトレード候補を毎週選定し、その後の結果を検証し、選定ルールを継続的に改善することです。
+日本株の「自己改善型スイングトレード分析プロジェクト」として運用するリポジトリです。目的は、寄り付き前・引け後の確認で実行可能な売買計画を作り、AI選定とEntry条件の付加価値を同一条件の比較検証で確かめることです。収益優位性は未実証です。
 
 このリポジトリはチャット履歴ではなく、運用の正本です。Codex は毎回、過去の推薦履歴、評価、反省、現行ルールを読み込んでから作業します。
 
@@ -85,7 +85,7 @@ GitHub では、`main` ブランチへの push を契機に GitHub Actions が `
 5. 0銘柄は、一次確認した上位候補がすべてハード除外条件に抵触した場合に限る。調査不足は見送りと同一視しない。
 6. `reports/screening/YYYY-MM-DD.md` に選定レポート、調査母集団、上位見送り理由、自己レビューを保存する。
 7. `history/recommendations.csv` に推薦履歴を追記する。
-8. 後日、推薦結果を評価し、`history/evaluations.csv` と `reports/reviews/YYYY-MM-DD.md` に保存する。
+8. 後日、EP-1に従って `history/trade_results.csv`、`history/mark_returns.csv`、日次純資産とレビューへ保存する。
 9. 十分な検証後、改善案をルールへ反映する。
 
 補助指標や週次需給の一部が取得できない場合は、欠損を明示して信頼度を下げます。最新株価、株式分割・併合、決算予定日、流動性、エントリー、損切り、利確、リスクリワードなどの必須データを確認できない場合は推薦しません。
@@ -120,8 +120,8 @@ Git は、推薦、評価、ルール変更、改善履歴を後から検証で�
 ## CSV の役割
 
 - `history/recommendations.csv`: 毎週の推薦銘柄と売買プランを1銘柄1行で記録する。
-- `history/evaluations.csv`: 推薦後の値動き、MFE、MAE、Target/Stop 到達、結果分類を記録する。
-- `history/weekly_performance.csv`: 週次レビュー単位の集計結果を記録する。
+- `history/evaluations.csv`: 旧方式の監査保留記録。新規取引は `history/trade_results.csv` に保存する。
+- `history/weekly_performance.csv`: 旧方式の週次集計を保存する。新方式の成績は検証済み取引から再計算する。
 - `history/market_environment.csv`: 推薦週や評価週の市場環境を記録する。
 
 ## レポートの役割
@@ -138,3 +138,23 @@ Git は、推薦、評価、ルール変更、改善履歴を後から検証で�
 - データが取得できない場合は推測せず、不明と記録します。
 - 推薦時点で利用できない未来情報は使いません。
 - 実売買、自動売買、注文執行は行いません。
+
+## 検証の再設計（2026-10-09）
+
+旧成績は監査保留とし、検証済み集計から除外した。原記録は `archive/pre_audit_2026-10-09/` にハッシュ付きで保存している。正本の読み方と新手順は次を参照する。
+
+- [監査結果と修正範囲](reports/experiments/2026-10-09.md)
+- [約定・集計の定義](rules/evaluation_protocol.md)
+- [比較検証の事前登録](rules/experiment_protocol.md)
+- [台帳・データ保存仕様](history/SCHEMA.md)
+- [毎日の確認](prompts/daily_review.md)
+- [月次レビュー](prompts/monthly_review.md)
+
+個人条件はGit対象外 `.local/operating_profile.json` へ保存する。公開用の実験資金と個人の資金は分離する。証券会社の口座接続や自動注文は行わない。
+
+```bash
+python3 scripts/research_checks.py
+python3 -m unittest discover -s scripts -p 'test_*.py'
+python3 scripts/build_site.py
+python3 scripts/check_site.py _site
+```

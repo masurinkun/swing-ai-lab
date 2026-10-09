@@ -1,0 +1,3 @@
+path,sha256,retrieved_at,source_url,coverage
+data/audit_price_excerpt_2026-10-09.csv,03a18bb9fea5730408041bbaaf8501d69d74f81bf9a1a13a197f01ea65be06ad,2026-10-09T15:26:02+09:00,https://finance.yahoo.co.jp/,8 rows; audit evidence only; not complete trading history
+data/jpx_holidays_2026.csv,53bb08b989277b34ca7e3e8f64368435338022109cc7ec191509e59b12bbf821,2026-10-09T15:26:02+09:00,https://www.jpx.co.jp/corporate/about-jpx/calendar/index.html,2026 calendar-year holidays; weekends excluded separately
