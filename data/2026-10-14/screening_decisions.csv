@@ -1,0 +1,34 @@
+screening_date,stock_code,sector,price_date,close,volume,observed_sessions,stage,reason,ohlcv_file,source_url
+2026-10-14,1605,鉱業,2026-10-13,3730.0,5270900.0,80,first_pass_only,; 一次価格確認済み。業績・決算・実行可能な価格条件の詳細審査を未完了のため監視。必須情報を推測して昇格しない,data/2026-10-14/1605_ohlcv.csv,https://finance.yahoo.co.jp/quote/1605.T/history
+2026-10-14,2269,食料品,2026-10-13,4257.0,1132200.0,80,first_pass_only,; 一次価格確認済み。業績・決算・実行可能な価格条件の詳細審査を未完了のため監視。必須情報を推測して昇格しない,data/2026-10-14/2269_ohlcv.csv,https://finance.yahoo.co.jp/quote/2269.T/history
+2026-10-14,2503,食料品,2026-10-13,2848.0,2382100.0,80,first_pass_only,; 一次価格確認済み。業績・決算・実行可能な価格条件の詳細審査を未完了のため監視。必須情報を推測して昇格しない,data/2026-10-14/2503_ohlcv.csv,https://finance.yahoo.co.jp/quote/2503.T/history
+2026-10-14,2914,食料品,2026-10-13,7319.0,5190000.0,80,first_pass_only,RSI69.6・20日+10.73%。7343円抵抗が近く現値追随のRR不足。過熱単独では除外していない,data/2026-10-14/2914_ohlcv.csv,https://finance.yahoo.co.jp/quote/2914.T/history
+2026-10-14,4063,化学,2026-10-13,6072.0,5045600.0,80,first_pass_only,; 一次価格確認済み。業績・決算・実行可能な価格条件の詳細審査を未完了のため監視。必須情報を推測して昇格しない,data/2026-10-14/4063_ohlcv.csv,https://finance.yahoo.co.jp/quote/4063.T/history
+2026-10-14,4502,医薬品,2026-10-13,5963.0,4001400.0,80,first_pass_only,; 一次価格確認済み。業績・決算・実行可能な価格条件の詳細審査を未完了のため監視。必須情報を推測して昇格しない,data/2026-10-14/4502_ohlcv.csv,https://finance.yahoo.co.jp/quote/4502.T/history
+2026-10-14,4503,医薬品,2026-10-13,2300.5,4347300.0,80,candidate,条件付き候補。2190〜2200円で支持維持・陽線を将来の引け後に確認,data/2026-10-14/4503_ohlcv.csv,https://finance.yahoo.co.jp/quote/4503.T/history
+2026-10-14,4519,医薬品,2026-10-13,6170.0,2644000.0,80,first_pass_only,downtrend_at_first_pass; 25/75日線下かつ20日騰落マイナス。業績採点前に一次保留,data/2026-10-14/4519_ohlcv.csv,https://finance.yahoo.co.jp/quote/4519.T/history
+2026-10-14,4568,医薬品,2026-10-13,2636.0,7146900.0,80,first_pass_only,downtrend_at_first_pass; 25/75日線下かつ20日騰落マイナス。業績採点前に一次保留,data/2026-10-14/4568_ohlcv.csv,https://finance.yahoo.co.jp/quote/4568.T/history
+2026-10-14,4661,サービス業,2026-10-13,2990.0,4096600.0,80,first_pass_only,; 一次価格確認済み。業績・決算・実行可能な価格条件の詳細審査を未完了のため監視。必須情報を推測して昇格しない,data/2026-10-14/4661_ohlcv.csv,https://finance.yahoo.co.jp/quote/4661.T/history
+2026-10-14,5020,石油・石炭製品,2026-10-13,1395.0,10796800.0,80,first_pass_only,; 一次価格確認済み。業績・決算・実行可能な価格条件の詳細審査を未完了のため監視。必須情報を推測して昇格しない,data/2026-10-14/5020_ohlcv.csv,https://finance.yahoo.co.jp/quote/5020.T/history
+2026-10-14,6098,サービス業,2026-10-13,18020.0,4232400.0,80,first_pass_only,強いが参考18020円の1単元が大きい。追随ではなく支持・損失幅再設定を要し今回は監視,data/2026-10-14/6098_ohlcv.csv,https://finance.yahoo.co.jp/quote/6098.T/history
+2026-10-14,6301,機械,2026-10-13,7416.0,3010100.0,80,first_pass_only,; 一次価格確認済み。業績・決算・実行可能な価格条件の詳細審査を未完了のため監視。必須情報を推測して昇格しない,data/2026-10-14/6301_ohlcv.csv,https://finance.yahoo.co.jp/quote/6301.T/history
+2026-10-14,6501,電気機器,2026-10-13,5764.0,13261300.0,80,first_pass_only,上昇維持だが5835円抵抗が近い。追随のRR不足、別の押し目帯の検証未完了,data/2026-10-14/6501_ohlcv.csv,https://finance.yahoo.co.jp/quote/6501.T/history
+2026-10-14,6503,電気機器,2026-10-13,5177.0,6732300.0,80,first_pass_only,; 一次価格確認済み。業績・決算・実行可能な価格条件の詳細審査を未完了のため監視。必須情報を推測して昇格しない,data/2026-10-14/6503_ohlcv.csv,https://finance.yahoo.co.jp/quote/6503.T/history
+2026-10-14,6702,電気機器,2026-10-13,4216.0,7732000.0,80,first_pass_only,上昇維持だが直近高値4287円までの追随RR不足。別の押し目帯・決算照合を終えていない,data/2026-10-14/6702_ohlcv.csv,https://finance.yahoo.co.jp/quote/6702.T/history
+2026-10-14,6758,電気機器,2026-10-13,3814.0,11772700.0,80,candidate,条件付き候補。公開研究A/B/C枠は資金制約で0割当。個人用株数は別途未確定,data/2026-10-14/6758_ohlcv.csv,https://finance.yahoo.co.jp/quote/6758.T/history
+2026-10-14,6857,電気機器,2026-10-13,40400.0,15968800.0,80,first_pass_only,20日+23.02%、25日線乖離+15.04%。減点。直近38350円安値を使う追随案は目標41990円までRR1.5未満,data/2026-10-14/6857_ohlcv.csv,https://finance.yahoo.co.jp/quote/6857.T/history
+2026-10-14,7011,機械,2026-10-13,3721.0,11562300.0,80,first_pass_only,downtrend_at_first_pass; 25/75日線下かつ20日騰落マイナス。業績採点前に一次保留,data/2026-10-14/7011_ohlcv.csv,https://finance.yahoo.co.jp/quote/7011.T/history
+2026-10-14,7203,輸送用機器,2026-10-13,2984.0,25048800.0,80,first_pass_only,; 一次価格確認済み。業績・決算・実行可能な価格条件の詳細審査を未完了のため監視。必須情報を推測して昇格しない,data/2026-10-14/7203_ohlcv.csv,https://finance.yahoo.co.jp/quote/7203.T/history
+2026-10-14,7267,輸送用機器,2026-10-13,1754.5,17262700.0,80,first_pass_only,次回決算の正確な日付を公式カレンダーで確認できず必須情報不足,data/2026-10-14/7267_ohlcv.csv,https://finance.yahoo.co.jp/quote/7267.T/history
+2026-10-14,7751,電気機器,2026-10-13,4716.0,2596600.0,80,first_pass_only,; 一次価格確認済み。業績・決算・実行可能な価格条件の詳細審査を未完了のため監視。必須情報を推測して昇格しない,data/2026-10-14/7751_ohlcv.csv,https://finance.yahoo.co.jp/quote/7751.T/history
+2026-10-14,8001,卸売業,2026-10-13,2219.0,14551700.0,80,first_pass_only,; 一次価格確認済み。業績・決算・実行可能な価格条件の詳細審査を未完了のため監視。必須情報を推測して昇格しない,data/2026-10-14/8001_ohlcv.csv,https://finance.yahoo.co.jp/quote/8001.T/history
+2026-10-14,8031,卸売業,2026-10-13,4910.0,5608500.0,80,first_pass_only,; 一次価格確認済み。業績・決算・実行可能な価格条件の詳細審査を未完了のため監視。必須情報を推測して昇格しない,data/2026-10-14/8031_ohlcv.csv,https://finance.yahoo.co.jp/quote/8031.T/history
+2026-10-14,8053,卸売業,2026-10-13,1737.5,7602000.0,80,first_pass_only,監視。25日線下・20日-5.57%・税引前減益と信用倍率12倍。Sony/Astellasより優先度を下げた。全体をハード除外と断定しない,data/2026-10-14/8053_ohlcv.csv,https://finance.yahoo.co.jp/quote/8053.T/history
+2026-10-14,8058,卸売業,2026-10-13,4700.0,7096400.0,60,first_pass_only,full_trend_and_adjustment_evidence_incomplete; 20/60日分のみ。75日線・分割確認未完了,data/2026-10-14/8058_ohlcv.csv,https://finance.yahoo.co.jp/quote/8058.T/history
+2026-10-14,8306,銀行業,2026-10-13,3551.0,34514400.0,20,first_pass_only,full_trend_and_adjustment_evidence_incomplete; 20/60日分のみ。75日線・分割確認未完了,data/2026-10-14/8306_ohlcv.csv,https://finance.yahoo.co.jp/quote/8306.T/history
+2026-10-14,8316,銀行業,2026-10-13,3347.0,16649200.0,20,first_pass_only,full_trend_and_adjustment_evidence_incomplete; 20/60日分のみ。75日線・分割確認未完了,data/2026-10-14/8316_ohlcv.csv,https://finance.yahoo.co.jp/quote/8316.T/history
+2026-10-14,8411,銀行業,2026-10-13,8376.0,6735100.0,20,first_pass_only,full_trend_and_adjustment_evidence_incomplete; 20/60日分のみ。75日線・分割確認未完了,data/2026-10-14/8411_ohlcv.csv,https://finance.yahoo.co.jp/quote/8411.T/history
+2026-10-14,8766,保険業,2026-10-13,533.6,78470600.0,20,first_pass_only,full_trend_and_adjustment_evidence_incomplete; 20/60日分のみ。75日線・分割確認未完了,data/2026-10-14/8766_ohlcv.csv,https://finance.yahoo.co.jp/quote/8766.T/history
+2026-10-14,9101,海運業,2026-10-13,7557.0,2974500.0,20,first_pass_only,full_trend_and_adjustment_evidence_incomplete; 20/60日分のみ。75日線・分割確認未完了,data/2026-10-14/9101_ohlcv.csv,https://finance.yahoo.co.jp/quote/9101.T/history
+2026-10-14,9432,情報・通信,2026-10-13,173.3,230914000.0,20,first_pass_only,full_trend_and_adjustment_evidence_incomplete; 20/60日分のみ。75日線・分割確認未完了,data/2026-10-14/9432_ohlcv.csv,https://finance.yahoo.co.jp/quote/9432.T/history
+2026-10-14,9433,情報・通信,2026-10-13,2887.5,10046100.0,20,first_pass_only,full_trend_and_adjustment_evidence_incomplete; 20/60日分のみ。75日線・分割確認未完了,data/2026-10-14/9433_ohlcv.csv,https://finance.yahoo.co.jp/quote/9433.T/history

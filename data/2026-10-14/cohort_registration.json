@@ -1,0 +1,72 @@
+{
+  "cohort_id": "EXP-2026-10-09-C20261014",
+  "experiment_id": "EXP-2026-10-09",
+  "registered_at": "2026-10-14T14:35:44+09:00",
+  "recommendation_date": "2026-10-14",
+  "planned_first_session": "2026-10-15",
+  "fixed_exit_session_B_C": "2026-10-28",
+  "status": "registered_pending_start",
+  "initial_nav_each_arm_jpy": 1000000,
+  "arms": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "cost_model_ids": [
+    "hypothetical_base",
+    "hypothetical_stress"
+  ],
+  "allocations": [
+    {
+      "stock_code": "6758",
+      "slot_jpy": 0,
+      "reason": "100-share lot at entry upper3710 already371000 > fixed per-name250000 cap; A/B/C all omit this slot, selection-only future returns still tracked"
+    },
+    {
+      "stock_code": "4503",
+      "slot_jpy": 250000,
+      "A": {
+        "watch_entry_low": 2190,
+        "entry_limit": 2200,
+        "stop": 2170,
+        "target": 2320,
+        "lot": 100,
+        "prospective_shares_base": 100,
+        "prospective_shares_stress": 100,
+        "planned_risk_base_jpy": 3880,
+        "planned_risk_stress_jpy": 4540,
+        "signal_window_start": "2026-10-14 close",
+        "last_signal_session": "2026-10-26",
+        "last_order_session": "2026-10-27",
+        "exit_deadline": "2026-10-28",
+        "status": "waiting_for_future_closed_bar_signal"
+      },
+      "B": {
+        "instrument": "4503",
+        "entry_session": "2026-10-15",
+        "holding_sessions": 10,
+        "shares_rule": "floor(250000/(actual_open*(1+one_way_fee+slippage))/100)*100; do not infer open in advance"
+      },
+      "C": {
+        "instrument": "1306",
+        "lot_size": 10,
+        "entry_session": "2026-10-15",
+        "holding_sessions": 10,
+        "shares_rule": "floor(250000/(actual_open*(1+one_way_fee+slippage))/10)*10; do not infer open in advance"
+      },
+      "D": {
+        "cash_only": true
+      }
+    }
+  ],
+  "remaining_unallocated_capital_each_arm_jpy": 750000,
+  "notes": [
+    "Hypothetical research only; no broker account access",
+    "A plan is registered only AFTER a qualifying future close, prior to its order session",
+    "B/C independent fixed-open allocation models, not real pre-submitted quantity orders",
+    "No A signal, fill, B/C open or result existed when registered; do not label experiment execution started",
+    "At time exit, cancel existing child orders before planned closing auction; if exclusivity/order history unconfirmed, do not certify actual execution",
+    "No scheduled automation added"
+  ]
+}

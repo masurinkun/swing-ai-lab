@@ -1,0 +1,592 @@
+[
+  {
+    "stock_code": "1605",
+    "retrieved_at": "2026-10-14T14:25:40+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/1605.T/history?page=1",
+      "https://finance.yahoo.co.jp/quote/1605.T/history?page=2",
+      "https://finance.yahoo.co.jp/quote/1605.T/history?page=3",
+      "https://finance.yahoo.co.jp/quote/1605.T/history?page=4"
+    ],
+    "rows": 80,
+    "first_date": "2026-06-16",
+    "last_date": "2026-10-13",
+    "failures": [],
+    "path": "data/2026-10-14/1605_ohlcv.csv",
+    "sha256": "81c5857e8edf954b5ce419424d0040110182c7475855b34a43e65d3b0dc3246e",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series"
+  },
+  {
+    "stock_code": "2269",
+    "retrieved_at": "2026-10-14T14:25:42+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/2269.T/history?page=1",
+      "https://finance.yahoo.co.jp/quote/2269.T/history?page=2",
+      "https://finance.yahoo.co.jp/quote/2269.T/history?page=3",
+      "https://finance.yahoo.co.jp/quote/2269.T/history?page=4"
+    ],
+    "rows": 80,
+    "first_date": "2026-06-16",
+    "last_date": "2026-10-13",
+    "failures": [],
+    "path": "data/2026-10-14/2269_ohlcv.csv",
+    "sha256": "dbbb1711ca7878775773bce58b2915dcd678c84214f072f1a6a6f1aa1d0bb8e4",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series"
+  },
+  {
+    "stock_code": "2503",
+    "retrieved_at": "2026-10-14T14:25:44+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/2503.T/history?page=1",
+      "https://finance.yahoo.co.jp/quote/2503.T/history?page=2",
+      "https://finance.yahoo.co.jp/quote/2503.T/history?page=3",
+      "https://finance.yahoo.co.jp/quote/2503.T/history?page=4"
+    ],
+    "rows": 80,
+    "first_date": "2026-06-16",
+    "last_date": "2026-10-13",
+    "failures": [],
+    "path": "data/2026-10-14/2503_ohlcv.csv",
+    "sha256": "5063386c10172a0b08f118f03379b51f6dfdacff4d651b5558fbb7ec4c2a27d4",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series"
+  },
+  {
+    "stock_code": "2914",
+    "retrieved_at": "2026-10-14T14:25:45+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/2914.T/history?page=1",
+      "https://finance.yahoo.co.jp/quote/2914.T/history?page=2",
+      "https://finance.yahoo.co.jp/quote/2914.T/history?page=3",
+      "https://finance.yahoo.co.jp/quote/2914.T/history?page=4"
+    ],
+    "rows": 80,
+    "first_date": "2026-06-16",
+    "last_date": "2026-10-13",
+    "failures": [],
+    "path": "data/2026-10-14/2914_ohlcv.csv",
+    "sha256": "1280ea94d38cbd8f2d46de95ecbb79f0c7b9373d3a63f5c1a88ad29b233d2e01",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series"
+  },
+  {
+    "stock_code": "4063",
+    "retrieved_at": "2026-10-14T14:25:47+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/4063.T/history?page=1",
+      "https://finance.yahoo.co.jp/quote/4063.T/history?page=2",
+      "https://finance.yahoo.co.jp/quote/4063.T/history?page=3",
+      "https://finance.yahoo.co.jp/quote/4063.T/history?page=4"
+    ],
+    "rows": 80,
+    "first_date": "2026-06-16",
+    "last_date": "2026-10-13",
+    "failures": [],
+    "path": "data/2026-10-14/4063_ohlcv.csv",
+    "sha256": "a1832f13e82f1b6c6bba8a490b84bdf186a4ae60694e5b3d7dc3d2043221bccd",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series"
+  },
+  {
+    "stock_code": "4502",
+    "retrieved_at": "2026-10-14T14:25:50+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/4502.T/history?page=1",
+      "https://finance.yahoo.co.jp/quote/4502.T/history?page=2",
+      "https://finance.yahoo.co.jp/quote/4502.T/history?page=3",
+      "https://finance.yahoo.co.jp/quote/4502.T/history?page=4"
+    ],
+    "rows": 80,
+    "first_date": "2026-06-16",
+    "last_date": "2026-10-13",
+    "failures": [],
+    "path": "data/2026-10-14/4502_ohlcv.csv",
+    "sha256": "3f004bf96f2f9fe25a3e34426b5848d7c0c17b1f9426d6df08d3fad70756df63",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series"
+  },
+  {
+    "stock_code": "4503",
+    "retrieved_at": "2026-10-14T14:25:52+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/4503.T/history?page=1",
+      "https://finance.yahoo.co.jp/quote/4503.T/history?page=2",
+      "https://finance.yahoo.co.jp/quote/4503.T/history?page=3",
+      "https://finance.yahoo.co.jp/quote/4503.T/history?page=4"
+    ],
+    "rows": 80,
+    "first_date": "2026-06-16",
+    "last_date": "2026-10-13",
+    "failures": [],
+    "path": "data/2026-10-14/4503_ohlcv.csv",
+    "sha256": "dd48cceab79c40b30926f849b8cce2e695d8ab238f555e58dea5780268492242",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series"
+  },
+  {
+    "stock_code": "4519",
+    "retrieved_at": "2026-10-14T14:25:55+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/4519.T/history?page=1",
+      "https://finance.yahoo.co.jp/quote/4519.T/history?page=2",
+      "https://finance.yahoo.co.jp/quote/4519.T/history?page=3",
+      "https://finance.yahoo.co.jp/quote/4519.T/history?page=4"
+    ],
+    "rows": 80,
+    "first_date": "2026-06-16",
+    "last_date": "2026-10-13",
+    "failures": [],
+    "path": "data/2026-10-14/4519_ohlcv.csv",
+    "sha256": "15fa5a0b6d22c123579c030b22c1c486110df790a239f0d29b7a3a2898888e9e",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series"
+  },
+  {
+    "stock_code": "4568",
+    "retrieved_at": "2026-10-14T14:25:58+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/4568.T/history?page=1",
+      "https://finance.yahoo.co.jp/quote/4568.T/history?page=2",
+      "https://finance.yahoo.co.jp/quote/4568.T/history?page=3",
+      "https://finance.yahoo.co.jp/quote/4568.T/history?page=4"
+    ],
+    "rows": 80,
+    "first_date": "2026-06-16",
+    "last_date": "2026-10-13",
+    "failures": [],
+    "path": "data/2026-10-14/4568_ohlcv.csv",
+    "sha256": "c459486b2d93855882224978584f4d985f8bfd1edfa504acae4796dbf4cd4c50",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series"
+  },
+  {
+    "stock_code": "4661",
+    "retrieved_at": "2026-10-14T14:26:00+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/4661.T/history?page=1",
+      "https://finance.yahoo.co.jp/quote/4661.T/history?page=2",
+      "https://finance.yahoo.co.jp/quote/4661.T/history?page=3",
+      "https://finance.yahoo.co.jp/quote/4661.T/history?page=4"
+    ],
+    "rows": 80,
+    "first_date": "2026-06-16",
+    "last_date": "2026-10-13",
+    "failures": [],
+    "path": "data/2026-10-14/4661_ohlcv.csv",
+    "sha256": "8b63bc50a0bb00310a63bd8ec29da2d286ef681011c40200fc1f6e3112d60909",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series"
+  },
+  {
+    "stock_code": "5020",
+    "retrieved_at": "2026-10-14T14:26:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/5020.T/history?page=1",
+      "https://finance.yahoo.co.jp/quote/5020.T/history?page=2",
+      "https://finance.yahoo.co.jp/quote/5020.T/history?page=3",
+      "https://finance.yahoo.co.jp/quote/5020.T/history?page=4"
+    ],
+    "rows": 80,
+    "first_date": "2026-06-16",
+    "last_date": "2026-10-13",
+    "failures": [],
+    "path": "data/2026-10-14/5020_ohlcv.csv",
+    "sha256": "97e71cb5eeae3a1559bb49116f461bde3ea4b1ef14073eff5ddef34886568206",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series"
+  },
+  {
+    "stock_code": "6098",
+    "retrieved_at": "2026-10-14T14:26:06+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/6098.T/history?page=1",
+      "https://finance.yahoo.co.jp/quote/6098.T/history?page=2",
+      "https://finance.yahoo.co.jp/quote/6098.T/history?page=3",
+      "https://finance.yahoo.co.jp/quote/6098.T/history?page=4"
+    ],
+    "rows": 80,
+    "first_date": "2026-06-16",
+    "last_date": "2026-10-13",
+    "failures": [],
+    "path": "data/2026-10-14/6098_ohlcv.csv",
+    "sha256": "d7aaadaf0c95e5c5c73c55e72b6142d8e0a32695df6b05ce0a57ff4135eb6e06",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series"
+  },
+  {
+    "stock_code": "6301",
+    "retrieved_at": "2026-10-14T14:26:08+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/6301.T/history?page=1",
+      "https://finance.yahoo.co.jp/quote/6301.T/history?page=2",
+      "https://finance.yahoo.co.jp/quote/6301.T/history?page=3",
+      "https://finance.yahoo.co.jp/quote/6301.T/history?page=4"
+    ],
+    "rows": 80,
+    "first_date": "2026-06-16",
+    "last_date": "2026-10-13",
+    "failures": [],
+    "path": "data/2026-10-14/6301_ohlcv.csv",
+    "sha256": "4225c829d8cd75fefaf10260596d3fb0f065d986f128cd9d50b70b1085c9d63d",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series"
+  },
+  {
+    "stock_code": "6501",
+    "retrieved_at": "2026-10-14T14:26:12+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/6501.T/history?page=1",
+      "https://finance.yahoo.co.jp/quote/6501.T/history?page=2",
+      "https://finance.yahoo.co.jp/quote/6501.T/history?page=3",
+      "https://finance.yahoo.co.jp/quote/6501.T/history?page=4"
+    ],
+    "rows": 80,
+    "first_date": "2026-06-16",
+    "last_date": "2026-10-13",
+    "failures": [],
+    "path": "data/2026-10-14/6501_ohlcv.csv",
+    "sha256": "07d36406a09e3702432eb5ab4cff7fd19823b79438861db1854b36fc679178ba",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series"
+  },
+  {
+    "stock_code": "6503",
+    "retrieved_at": "2026-10-14T14:26:16+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/6503.T/history?page=1",
+      "https://finance.yahoo.co.jp/quote/6503.T/history?page=2",
+      "https://finance.yahoo.co.jp/quote/6503.T/history?page=3",
+      "https://finance.yahoo.co.jp/quote/6503.T/history?page=4"
+    ],
+    "rows": 80,
+    "first_date": "2026-06-16",
+    "last_date": "2026-10-13",
+    "failures": [],
+    "path": "data/2026-10-14/6503_ohlcv.csv",
+    "sha256": "c6c68438f012c09fc749d2755809d1b58bcc42a7044e57b9f57cb4a64ff96b70",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series"
+  },
+  {
+    "stock_code": "6702",
+    "retrieved_at": "2026-10-14T14:26:19+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/6702.T/history?page=1",
+      "https://finance.yahoo.co.jp/quote/6702.T/history?page=2",
+      "https://finance.yahoo.co.jp/quote/6702.T/history?page=3",
+      "https://finance.yahoo.co.jp/quote/6702.T/history?page=4"
+    ],
+    "rows": 80,
+    "first_date": "2026-06-16",
+    "last_date": "2026-10-13",
+    "failures": [],
+    "path": "data/2026-10-14/6702_ohlcv.csv",
+    "sha256": "a1d86c4bb8c563ddb300186703c2799b73e1d3559ac7a3b4f4a50787f85407f8",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series"
+  },
+  {
+    "stock_code": "6758",
+    "retrieved_at": "2026-10-14T14:26:26+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/6758.T/history?page=1",
+      "https://finance.yahoo.co.jp/quote/6758.T/history?page=2",
+      "https://finance.yahoo.co.jp/quote/6758.T/history?page=3",
+      "https://finance.yahoo.co.jp/quote/6758.T/history?page=4"
+    ],
+    "rows": 80,
+    "first_date": "2026-06-16",
+    "last_date": "2026-10-13",
+    "failures": [],
+    "path": "data/2026-10-14/6758_ohlcv.csv",
+    "sha256": "029d32be835ed65e7d5389b718b6c69ee3503e6afbf1fd9ae67cfe38e66479dc",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series"
+  },
+  {
+    "stock_code": "6857",
+    "retrieved_at": "2026-10-14T14:26:31+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/6857.T/history?page=1",
+      "https://finance.yahoo.co.jp/quote/6857.T/history?page=2",
+      "https://finance.yahoo.co.jp/quote/6857.T/history?page=3",
+      "https://finance.yahoo.co.jp/quote/6857.T/history?page=4"
+    ],
+    "rows": 80,
+    "first_date": "2026-06-16",
+    "last_date": "2026-10-13",
+    "failures": [],
+    "path": "data/2026-10-14/6857_ohlcv.csv",
+    "sha256": "4eb79affb6a46a2e467229b6a0f477800735329b8d8ef7eeca15b2ecbbd08dff",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series"
+  },
+  {
+    "stock_code": "7011",
+    "retrieved_at": "2026-10-14T14:26:35+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/7011.T/history?page=1",
+      "https://finance.yahoo.co.jp/quote/7011.T/history?page=2",
+      "https://finance.yahoo.co.jp/quote/7011.T/history?page=3",
+      "https://finance.yahoo.co.jp/quote/7011.T/history?page=4"
+    ],
+    "rows": 80,
+    "first_date": "2026-06-16",
+    "last_date": "2026-10-13",
+    "failures": [],
+    "path": "data/2026-10-14/7011_ohlcv.csv",
+    "sha256": "dd81e07dc0c03c6d6139c6b8065cb3f815a1c6fd1fa9385c47a15a16c46ac464",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series"
+  },
+  {
+    "stock_code": "7203",
+    "retrieved_at": "2026-10-14T14:26:40+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/7203.T/history?page=1",
+      "https://finance.yahoo.co.jp/quote/7203.T/history?page=2",
+      "https://finance.yahoo.co.jp/quote/7203.T/history?page=3",
+      "https://finance.yahoo.co.jp/quote/7203.T/history?page=4"
+    ],
+    "rows": 80,
+    "first_date": "2026-06-16",
+    "last_date": "2026-10-13",
+    "failures": [],
+    "path": "data/2026-10-14/7203_ohlcv.csv",
+    "sha256": "127495d7a6d2f366f1dcf675ed586ef101143418d4fb34fb70b6edf37fd83ce0",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series"
+  },
+  {
+    "stock_code": "7267",
+    "retrieved_at": "2026-10-14T14:26:44+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/7267.T/history?page=1",
+      "https://finance.yahoo.co.jp/quote/7267.T/history?page=2",
+      "https://finance.yahoo.co.jp/quote/7267.T/history?page=3",
+      "https://finance.yahoo.co.jp/quote/7267.T/history?page=4"
+    ],
+    "rows": 80,
+    "first_date": "2026-06-16",
+    "last_date": "2026-10-13",
+    "failures": [],
+    "path": "data/2026-10-14/7267_ohlcv.csv",
+    "sha256": "4c77bd9363f3036967d0b984e226b6c4f855ac3d198084415329468c17a07fa7",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series"
+  },
+  {
+    "stock_code": "7751",
+    "retrieved_at": "2026-10-14T14:26:50+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/7751.T/history?page=1",
+      "https://finance.yahoo.co.jp/quote/7751.T/history?page=2",
+      "https://finance.yahoo.co.jp/quote/7751.T/history?page=3",
+      "https://finance.yahoo.co.jp/quote/7751.T/history?page=4"
+    ],
+    "rows": 80,
+    "first_date": "2026-06-16",
+    "last_date": "2026-10-13",
+    "failures": [],
+    "path": "data/2026-10-14/7751_ohlcv.csv",
+    "sha256": "cd56305489823c8f3dbef508aaf689df3dc87dca09e630f980c562b28554c4e0",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series"
+  },
+  {
+    "stock_code": "8001",
+    "retrieved_at": "2026-10-14T14:26:53+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/8001.T/history?page=1",
+      "https://finance.yahoo.co.jp/quote/8001.T/history?page=2",
+      "https://finance.yahoo.co.jp/quote/8001.T/history?page=3",
+      "https://finance.yahoo.co.jp/quote/8001.T/history?page=4"
+    ],
+    "rows": 80,
+    "first_date": "2026-06-16",
+    "last_date": "2026-10-13",
+    "failures": [],
+    "path": "data/2026-10-14/8001_ohlcv.csv",
+    "sha256": "ad6e3765cbd30cafe8ab7537b7191ace449e192b4f78c9665e20f6184e6449d4",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series"
+  },
+  {
+    "stock_code": "8031",
+    "retrieved_at": "2026-10-14T14:27:00+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/8031.T/history?page=1",
+      "https://finance.yahoo.co.jp/quote/8031.T/history?page=2",
+      "https://finance.yahoo.co.jp/quote/8031.T/history?page=3",
+      "https://finance.yahoo.co.jp/quote/8031.T/history?page=4"
+    ],
+    "rows": 80,
+    "first_date": "2026-06-16",
+    "last_date": "2026-10-13",
+    "failures": [],
+    "path": "data/2026-10-14/8031_ohlcv.csv",
+    "sha256": "72a5bb0966c5f6fcf159efab1e1b35a699a27009265e97bb775ae8a9282a4941",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series"
+  },
+  {
+    "stock_code": "8053",
+    "retrieved_at": "2026-10-14T14:27:05+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/8053.T/history?page=1",
+      "https://finance.yahoo.co.jp/quote/8053.T/history?page=2",
+      "https://finance.yahoo.co.jp/quote/8053.T/history?page=3",
+      "https://finance.yahoo.co.jp/quote/8053.T/history?page=4"
+    ],
+    "rows": 80,
+    "first_date": "2026-06-16",
+    "last_date": "2026-10-13",
+    "failures": [],
+    "path": "data/2026-10-14/8053_ohlcv.csv",
+    "sha256": "1d6f274a23e3401b80f0a32e2b018e779767f21624fd467ec8e34760297e4281",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series"
+  },
+  {
+    "stock_code": "8058",
+    "retrieved_at": "2026-10-14T14:27:07+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/8058.T/history?page=1",
+      "https://finance.yahoo.co.jp/quote/8058.T/history?page=2",
+      "https://finance.yahoo.co.jp/quote/8058.T/history?page=3"
+    ],
+    "rows": 60,
+    "first_date": "2026-07-14",
+    "last_date": "2026-10-13",
+    "failures": [
+      "page 4: HTTP Error 500: Internal Server Error"
+    ],
+    "path": "data/2026-10-14/8058_ohlcv.csv",
+    "sha256": "25f222d9e36d56605b80c3fbaa398f779c1104803e7d4f3c7c3463c3f02bd7ba",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series"
+  },
+  {
+    "stock_code": "8306",
+    "retrieved_at": "2026-10-14T14:27:09+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/8306.T/history"
+    ],
+    "rows": 20,
+    "first_date": "2026-09-10",
+    "last_date": "2026-10-13",
+    "failures": [
+      "page 1: HTTP Error 500: Internal Server Error",
+      "page 2: HTTP Error 500: Internal Server Error",
+      "page 3: HTTP Error 500: Internal Server Error",
+      "page 4: HTTP Error 500: Internal Server Error"
+    ],
+    "path": "data/2026-10-14/8306_ohlcv.csv",
+    "sha256": "8f5f750a964a41b56435a44dffdc93954f4d5443681d6ce1a0a9159119bf4b6d",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series",
+    "retrieval_method": "web extraction after HTTP500 fallback; first 20 sessions only",
+    "fallback_saved_at": "2026-10-14T14:39:14+09:00"
+  },
+  {
+    "stock_code": "8316",
+    "retrieved_at": "2026-10-14T14:27:10+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/8316.T/history"
+    ],
+    "rows": 20,
+    "first_date": "2026-09-10",
+    "last_date": "2026-10-13",
+    "failures": [
+      "page 1: HTTP Error 500: Internal Server Error",
+      "page 2: HTTP Error 500: Internal Server Error",
+      "page 3: HTTP Error 500: Internal Server Error",
+      "page 4: HTTP Error 500: Internal Server Error"
+    ],
+    "path": "data/2026-10-14/8316_ohlcv.csv",
+    "sha256": "649ad6959c33ea295fef4786cbad80d33eeb5d4bb1d5d58abca4890ddaa1e4b8",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series",
+    "retrieval_method": "web extraction after HTTP500 fallback; first 20 sessions only",
+    "fallback_saved_at": "2026-10-14T14:39:14+09:00"
+  },
+  {
+    "stock_code": "8411",
+    "retrieved_at": "2026-10-14T14:27:11+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/8411.T/history"
+    ],
+    "rows": 20,
+    "first_date": "2026-09-10",
+    "last_date": "2026-10-13",
+    "failures": [
+      "page 1: HTTP Error 500: Internal Server Error",
+      "page 2: HTTP Error 500: Internal Server Error",
+      "page 3: HTTP Error 500: Internal Server Error",
+      "page 4: HTTP Error 500: Internal Server Error"
+    ],
+    "path": "data/2026-10-14/8411_ohlcv.csv",
+    "sha256": "cd9048de6e22224641c373a2e17ad17b6a7ef428a356b947f08e885598423bfe",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series",
+    "retrieval_method": "web extraction after HTTP500 fallback; first 20 sessions only",
+    "fallback_saved_at": "2026-10-14T14:39:14+09:00"
+  },
+  {
+    "stock_code": "8766",
+    "retrieved_at": "2026-10-14T14:27:13+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/8766.T/history"
+    ],
+    "rows": 20,
+    "first_date": "2026-09-10",
+    "last_date": "2026-10-13",
+    "failures": [
+      "page 1: HTTP Error 500: Internal Server Error",
+      "page 2: HTTP Error 500: Internal Server Error",
+      "page 3: HTTP Error 500: Internal Server Error",
+      "page 4: HTTP Error 500: Internal Server Error"
+    ],
+    "path": "data/2026-10-14/8766_ohlcv.csv",
+    "sha256": "969a3710b48bb13d5c1e757f1464c091528d443cba513cee8f9531329bd91260",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series",
+    "retrieval_method": "web extraction after HTTP500 fallback; first 20 sessions only",
+    "fallback_saved_at": "2026-10-14T14:39:14+09:00"
+  },
+  {
+    "stock_code": "9101",
+    "retrieved_at": "2026-10-14T14:27:14+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/9101.T/history"
+    ],
+    "rows": 20,
+    "first_date": "2026-09-10",
+    "last_date": "2026-10-13",
+    "failures": [
+      "page 1: HTTP Error 500: Internal Server Error",
+      "page 2: HTTP Error 500: Internal Server Error",
+      "page 3: HTTP Error 500: Internal Server Error",
+      "page 4: HTTP Error 500: Internal Server Error"
+    ],
+    "path": "data/2026-10-14/9101_ohlcv.csv",
+    "sha256": "fa5bd58246c7002630423a95098ddff0d08ef242856e85b57039c664d42cc1df",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series",
+    "retrieval_method": "web extraction after HTTP500 fallback; first 20 sessions only",
+    "fallback_saved_at": "2026-10-14T14:39:14+09:00"
+  },
+  {
+    "stock_code": "9432",
+    "retrieved_at": "2026-10-14T14:27:15+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/9432.T/history"
+    ],
+    "rows": 20,
+    "first_date": "2026-09-10",
+    "last_date": "2026-10-13",
+    "failures": [
+      "page 1: HTTP Error 500: Internal Server Error",
+      "page 2: HTTP Error 500: Internal Server Error",
+      "page 3: HTTP Error 500: Internal Server Error",
+      "page 4: HTTP Error 500: Internal Server Error"
+    ],
+    "path": "data/2026-10-14/9432_ohlcv.csv",
+    "sha256": "8d72443d0efc31bb3bdf473ae2d464aca658cf14f494225138b01b4fb3032364",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series",
+    "retrieval_method": "web extraction after HTTP500 fallback; first 20 sessions only",
+    "fallback_saved_at": "2026-10-14T14:39:14+09:00"
+  },
+  {
+    "stock_code": "9433",
+    "retrieved_at": "2026-10-14T14:27:17+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/9433.T/history"
+    ],
+    "rows": 20,
+    "first_date": "2026-09-10",
+    "last_date": "2026-10-13",
+    "failures": [
+      "page 1: HTTP Error 500: Internal Server Error",
+      "page 2: HTTP Error 500: Internal Server Error",
+      "page 3: HTTP Error 500: Internal Server Error",
+      "page 4: HTTP Error 500: Internal Server Error"
+    ],
+    "path": "data/2026-10-14/9433_ohlcv.csv",
+    "sha256": "4b57149f3dbabfe47e8772eee9457021f3e8cd52b48c091d137f871b1504352a",
+    "adjustment_note": "Provider unadjusted OHLCV plus separately published adjusted close; split events independently checked before recommendation; adjusted close is not dividend-total-return series",
+    "retrieval_method": "web extraction after HTTP500 fallback; first 20 sessions only",
+    "fallback_saved_at": "2026-10-14T14:39:14+09:00"
+  }
+]

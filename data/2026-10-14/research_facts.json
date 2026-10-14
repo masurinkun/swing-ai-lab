@@ -1,0 +1,170 @@
+{
+  "retrieved_at": "2026-10-14T14:35:44+09:00",
+  "as_of_closed_session": "2026-10-13",
+  "current_quotes": [
+    {
+      "stock_code": "6758",
+      "price": 3865,
+      "quote_at": "2026-10-14T13:57:00+09:00",
+      "delay_minutes": 15,
+      "source_url": "https://www.traders.co.jp/stocks/61_6758/",
+      "lot_size": 100,
+      "credit_as_of": "2026-10-13",
+      "credit_buy_shares": 5707200,
+      "credit_sell_shares": 332500,
+      "credit_ratio": 17.16,
+      "per": 18.65,
+      "pbr": 2.78,
+      "roe_pct": 12.65
+    },
+    {
+      "stock_code": "4503",
+      "price": 2261,
+      "quote_at": "2026-10-14T14:19:00+09:00",
+      "source_url": "https://finance.yahoo.co.jp/quote/4503.T",
+      "lot_size": 100,
+      "credit_as_of": "2026-10-09",
+      "credit_buy_shares": 870300,
+      "credit_sell_shares": 407600,
+      "credit_ratio": 2.14,
+      "per": 13.5,
+      "pbr": 2.09,
+      "roe_pct": 17.45
+    }
+  ],
+  "company_facts": [
+    {
+      "stock_code": "6758",
+      "period": "FY2026 Q1 / fiscal year ending 2027-03",
+      "source_url": "https://www.sony.com/ja/SonyInfo/IR/library/presen/er/pdf/26q1_sony.pdf",
+      "revenue_million_jpy": 2837771,
+      "revenue_yoy_pct": 8.2,
+      "operating_profit_million_jpy": 476499,
+      "operating_profit_yoy_pct": 40.2,
+      "attributable_profit_million_jpy": 342161,
+      "attributable_profit_yoy_pct": 32.1,
+      "annual_revenue_forecast_million_jpy": 12500000,
+      "annual_operating_profit_forecast_million_jpy": 1720000,
+      "annual_attributable_profit_forecast_million_jpy": 1210000,
+      "dividend_forecast_jpy": 35,
+      "next_earnings": "2026-11-05",
+      "earnings_source_url": "https://www.sony.com/ja/SonyInfo/IR/library/presen/er/",
+      "last_split_effective": "2024-10-01",
+      "last_split_ratio_new_per_old": 5,
+      "split_source_url": "https://www.sony.com/ja/SonyInfo/IR/faq/stock_general.html",
+      "material_risks": [
+        "Kumamoto earthquake impact not quantified in Q1 forecast",
+        "credit long imbalance",
+        "FX and semiconductor cycle"
+      ]
+    },
+    {
+      "stock_code": "4503",
+      "period": "FY2026 Q1 / fiscal year ending 2027-03",
+      "source_url": "https://www.astellas.com/content/dam/astellas-com/global/ja/confidential-documents/financial-results/1q2026_jp.pdf",
+      "revenue_million_jpy": 640914,
+      "revenue_yoy_pct": 26.7,
+      "operating_profit_million_jpy": 184506,
+      "operating_profit_yoy_pct": 94.9,
+      "core_operating_profit_million_jpy": 221417,
+      "core_operating_profit_yoy_pct": 55.6,
+      "attributable_profit_million_jpy": 141828,
+      "attributable_profit_yoy_pct": 107.3,
+      "annual_revenue_forecast_million_jpy": 2220000,
+      "annual_operating_profit_forecast_million_jpy": 395000,
+      "dividend_forecast_jpy": 80,
+      "next_earnings": "2026-11-04",
+      "earnings_source_url": "https://www.astellas.com/jp/investors/ir-library",
+      "lot_source_url": "https://www.astellas.com/jp/investors/stock-and-analyst-information",
+      "shares_outstanding_20260331": 1809663075,
+      "shares_outstanding_20260630": 1809663075,
+      "shares_outstanding_quote_20261014": 1809663075,
+      "split_check": "No split/consolidation identified over saved price window in reviewed company disclosures; unchanged outstanding shares cross-checked; provider close/adjusted-close factors all 1. No unsupported event assigned."
+    },
+    {
+      "stock_code": "8053",
+      "source_url": "https://www.sumitomocorp.com/-/media/Files/hq/ir/report/summary/2026/2606Tanshin.pdf?sc_lang=ja",
+      "revenue_million_jpy": 1949362,
+      "revenue_yoy_pct": 9.0,
+      "pretax_profit_million_jpy": 152261,
+      "pretax_profit_yoy_pct": -27.6,
+      "attributable_profit_million_jpy": 190075,
+      "attributable_profit_yoy_pct": 11.2,
+      "next_earnings": "2026-11-02",
+      "earnings_source_url": "https://www.sumitomocorp.com/ja/jp/ir/calendar",
+      "split_effective": "2026-07-01",
+      "split_ratio": 4,
+      "interpretation": "Net growth includes tax benefit; not uniformly improving underlying earnings."
+    }
+  ],
+  "benchmark": {
+    "stock_code": "1306",
+    "source_url": "https://nextfunds.jp/lineup/1306/",
+    "price_date": "2026-10-13",
+    "close": 432.5,
+    "lot_size": 10,
+    "split_effective": "2026-04-01",
+    "split_source_url": "https://nextfunds.jp/news/2026/pd_260330a.html",
+    "market_volume_20261013": 12558260,
+    "volume_source_url": "https://finance.yahoo.co.jp/quote/1306.T/history"
+  },
+  "market": {
+    "nikkei225": {
+      "value": 67777.52,
+      "as_of": "2026-10-13 close",
+      "source_url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261013&idx=nk225"
+    },
+    "topix": {
+      "value": 4110.67,
+      "as_of": "2026-10-13 close",
+      "source_url": "https://news.livedoor.com/article/detail/32560691/",
+      "note": "Previous close confirmed from quoted 2026-10-14 09:15 value 4104.63 and change -6.04; arithmetic 4110.67"
+    },
+    "intraday": {
+      "as_of": "2026-10-14 11:30 JST",
+      "nikkei225": 68193.13,
+      "topix": 4108.8,
+      "source_url": "https://www.oanda.jp/lab-education/market_news/mn_1038789_202610141158/",
+      "positive_sectors": [
+        "nonferrous metals",
+        "chemicals",
+        "electrical machinery"
+      ],
+      "negative_sectors": [
+        "banks",
+        "securities",
+        "air transport"
+      ]
+    },
+    "usd_jpy": {
+      "value": 158.29,
+      "as_of": "2026-10-14 12:00 JST",
+      "source_url": "https://s.kabutan.jp/news/n202610140515/"
+    },
+    "missing": [
+      "growth250 latest confirmed numeric value",
+      "US latest close indexes",
+      "VIX latest close",
+      "US10y latest close",
+      "investor flows latest week",
+      "quantitative sector money flows"
+    ]
+  },
+  "constraints": [
+    "Private fee eligibility and combined order UI remain unconfirmed; no personal execution shares finalized",
+    "No account access, orders, or intraday confirmation-at-past-open fills",
+    "Only closed sessions through 2026-10-13 used in calculated indicators"
+  ],
+  "calculations": {
+    "sma": "arithmetic mean of last n provider adjusted closes (n=5,20,25,75)",
+    "rsi": "Wilder14 initialized with mean first14 positive/negative changes over saved80-session window; finite warmup disclosed",
+    "macd": "EMA12-EMA26; EMA9 signal; seed first close, finite80-session warmup",
+    "volume_ratio": "last volume / arithmetic mean of previous20 volumes; unadjusted volume; not comparable across split unless checked",
+    "levels": "20-session and full saved-window raw high/low anchors; candidate periods have no identified split"
+  },
+  "retrieval_failures": [
+    "Yahoo chart API HTTP429; no values inferred",
+    "Shell Yahoo history HTTP500 from partial 8058 onward; 7 missing codes recovered as20-session web extracts",
+    "All quote snapshot shell requests HTTP500; selected quotes recovered via web; unverified stock fundamentals left unscored"
+  ]
+}

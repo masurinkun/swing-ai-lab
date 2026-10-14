@@ -1,2 +1,3 @@
 date,operation,status,elapsed_minutes,api_cost_jpy,missing_data,report_file
 2026-10-09,運用監査と評価方式改訂,implemented_pending_personal_risk_scope,,,過去全期間OHLCV・実費用・作業時間未計測,reports/experiments/2026-10-09.md
+2026-10-14,月曜起動失敗分の振替週次選定・期限照合・初回比較登録,analysis_completed,15.9,,旧27推薦の約定再検証・8銘柄の日足不足・補助市場値・本人用実費用と注文画面。API費用未計測,reports/screening/2026-10-14.md

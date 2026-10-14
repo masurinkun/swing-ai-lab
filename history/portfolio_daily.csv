@@ -1,1 +1,9 @@
 experiment_id,strategy_id,protocol_id,cost_model_id,date,initial_capital_jpy,cash_jpy,market_value_jpy,dividend_receivable_jpy,nav_jpy,audit_status,source_file
+EXP-2026-10-09,A,EP-1,hypothetical_base,2026-10-14,1000000,1000000,0,0,1000000,verified,data/2026-10-14/cohort_registration.json
+EXP-2026-10-09,A,EP-1,hypothetical_stress,2026-10-14,1000000,1000000,0,0,1000000,verified,data/2026-10-14/cohort_registration.json
+EXP-2026-10-09,B,EP-1,hypothetical_base,2026-10-14,1000000,1000000,0,0,1000000,verified,data/2026-10-14/cohort_registration.json
+EXP-2026-10-09,B,EP-1,hypothetical_stress,2026-10-14,1000000,1000000,0,0,1000000,verified,data/2026-10-14/cohort_registration.json
+EXP-2026-10-09,C,EP-1,hypothetical_base,2026-10-14,1000000,1000000,0,0,1000000,verified,data/2026-10-14/cohort_registration.json
+EXP-2026-10-09,C,EP-1,hypothetical_stress,2026-10-14,1000000,1000000,0,0,1000000,verified,data/2026-10-14/cohort_registration.json
+EXP-2026-10-09,D,EP-1,hypothetical_base,2026-10-14,1000000,1000000,0,0,1000000,verified,data/2026-10-14/cohort_registration.json
+EXP-2026-10-09,D,EP-1,hypothetical_stress,2026-10-14,1000000,1000000,0,0,1000000,verified,data/2026-10-14/cohort_registration.json
