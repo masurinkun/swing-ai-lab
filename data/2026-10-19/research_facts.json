@@ -1,0 +1,83 @@
+{
+  "retrieved_at": "2026-10-19T08:08:53+09:00",
+  "as_of_closed_session": "2026-10-16",
+  "screening_universe_count": 33,
+  "candidates": [
+    {
+      "stock_code": "8766",
+      "stock_name": "東京海上ホールディングス",
+      "lot_size": 100,
+      "price_date": "2026-10-16",
+      "close": 558.3,
+      "credit_as_of": "2026-10-09",
+      "credit_sell_shares": 2002100,
+      "credit_buy_shares": 43938400,
+      "credit_ratio": 21.95,
+      "prior_credit_ratio": 30.17,
+      "company_source_url": "https://www.tokiomarinehd.com/en/ir/",
+      "company_facts": "FY2026 forecast adjusted net income JPY950bn, +8% YoY; adjusted ROE 13.0%; dividend JPY245 before the October split basis shown by the company",
+      "q1_source_url": "https://www.tokiomarinehd.com/ir/event/presentation/",
+      "q1_facts": "Insurance revenue +12.3% YoY and attributable quarterly profit +3.3%; adjusted net income -3.6% YoY",
+      "next_earnings": "2026-11-19",
+      "earnings_source_url": "https://finance.yahoo.co.jp/quote/8766.O",
+      "split_effective": "2026-10-01",
+      "split_ratio_new_per_old": 15,
+      "split_source_url": "https://www.tokiomarinehd.com/ir/stock_split/",
+      "price_source_url": "https://finance.yahoo.co.jp/quote/8766.T/history",
+      "credit_source_url": "https://finance.yahoo.co.jp/quote/8766.T/history?styl=margin"
+    },
+    {
+      "stock_code": "6098",
+      "stock_name": "リクルートホールディングス",
+      "lot_size": 100,
+      "price_date": "2026-10-16",
+      "close": 18420,
+      "credit_as_of": "2026-10-09",
+      "credit_sell_shares": 385100,
+      "credit_buy_shares": 477600,
+      "credit_ratio": 1.24,
+      "daily_loan_ratio_as_of_20261015": 1.14,
+      "q1_source_url": "https://recruit-holdings.com/ja/ir/library/upload/recruit_202703Q1_earnings_jp/",
+      "q1_facts": "Revenue JPY1,045.35bn +18.9% YoY; operating profit JPY255.413bn +66.1%; attributable profit JPY202.618bn +67.5%; equity ratio 61.0%",
+      "annual_forecast": "Revenue JPY4,230bn +14.4%; adjusted EBITDA+S JPY1,105bn +39.1%; operating profit JPY945bn +49.9%; attributable profit JPY755bn +51.9%",
+      "next_earnings": "2026-11-11",
+      "earnings_source_url": "https://recruit-holdings.com/ja/ir/events/",
+      "recent_disclosure": "2026-10-01 share repurchase status disclosure",
+      "price_source_url": "https://finance.yahoo.co.jp/quote/6098.T/history",
+      "credit_source_url": "https://finance.yahoo.co.jp/quote/6098.T/history?styl=margin"
+    }
+  ],
+  "market": {
+    "nikkei225": {"value": 65324.29, "as_of": "2026-10-16 close", "weekly_pct": -5.37, "source_url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261016&idx=nk225"},
+    "topix": {"value": 4066.00, "as_of": "2026-10-16 close", "weekly_pct": -0.95, "source_url": "https://www.traders.co.jp/market_jp/"},
+    "growth250": {"value": 779.18, "as_of": "2026-10-16 close", "weekly_pct": 3.00, "source_url": "https://www.traders.co.jp/market_jp/"},
+    "usd_jpy": {"value": 157.94, "as_of": "2026-10-16 15:58 JST", "source_url": "https://www.traders.co.jp/market_jp/"},
+    "us_10y_yield": {"value_pct": 5.10, "as_of": "2026-10-16", "source_url": "https://www.federalreserve.gov/releases/h15/"},
+    "dow": {"value": 52002.41, "as_of": "2026-10-16 close", "daily_pct": -0.34, "weekly_pct": 0.67, "source_url": "https://apnews.com/article/c27809783ae3230b44c26e5ee4bea056"},
+    "nasdaq": {"value": 26140.03, "as_of": "2026-10-16 close", "daily_pct": -2.15, "weekly_pct": -4.48, "source_url": "https://apnews.com/article/c27809783ae3230b44c26e5ee4bea056"},
+    "sox": {"value": 11137.29, "as_of": "2026-10-16 close", "daily_pct": -3.83, "weekly_pct": -11.40, "source_url": "https://indexes.nasdaqomx.com/Index/Overview/SOX"},
+    "vix": {"value": 19.99, "as_of": "2026-10-16 close", "daily_pct": 21.45, "source_url": "https://finance.yahoo.com/quote/%5EVIX/history/"},
+    "wti": {"value_usd": 101.41, "as_of": "2026-10-16", "source_url": "https://www.marketenergy.com/servicesprice-postings.html"},
+    "jpx_foreign_prime_cash_balance_thousand_jpy": 1445499108,
+    "jpx_flow_period": "2026-10-05/2026-10-09",
+    "jpx_flow_source_url": "https://www.jpx.co.jp/markets/statistics-equities/investor-type/t13vrt000002gv8k-att/stock_1_w_20261005_20261009.xlsx",
+    "sector_weekly": "20 sectors up, 13 down; pharmaceuticals +6.05%, insurance +4.79%, transportation equipment +4.53%, services +3.91%, wholesale +3.72%; electrical machinery -6.76%, nonferrous metals -12.51%",
+    "sector_source_url": "https://fu.minkabu.jp/news/722288",
+    "prime_breadth_weekly": "advancers 1028, decliners 510, unchanged 8",
+    "premarket_20261019": "CME Nikkei futures 63,925, 1,595 points below Osaka close; USD/JPY around 157.80 at 07:37 JST",
+    "premarket_source_url": "https://www.traders.co.jp/market_jp/"
+  },
+  "calculations": {
+    "sma": "Arithmetic mean of provider adjusted closes for 5, 20, 25 and 75 sessions",
+    "rsi": "Wilder RSI14, initialized from the first 14 changes in the saved window",
+    "macd": "EMA12 minus EMA26, signal EMA9; first saved close used as seed",
+    "volume_ratio": "Latest volume divided by the prior 20-session arithmetic mean",
+    "price_basis": "Unadjusted OHLCV with provider adjusted close stored separately; 8766's official 1:15 split was independently checked"
+  },
+  "constraints": [
+    "Only closed sessions through 2026-10-16 are used for candidate indicators",
+    "Private fee eligibility, live buying power and combined-order UI remain unconfirmed; no personal execution shares are finalized",
+    "No account access, automated trading or order execution",
+    "Ichimoku and quantitative per-sector fund-flow series were not independently acquired; missing auxiliary data reduced confidence but was not a hard exclusion"
+  ]
+}

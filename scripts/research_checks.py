@@ -138,21 +138,29 @@ def validate(root=ROOT):
     by_plan={p['plan_id']:p for p in plans}
     for p in plans:
         try:
-            signal=datetime.fromisoformat(p['signal_confirmed_at'])
             created=datetime.fromisoformat(p['created_at'])
-            check(signal.utcoffset() is not None and created.utcoffset() is not None,'Plan timestamps require timezone')
-            if signal.utcoffset() is None or created.utcoffset() is None:
+            check(created.utcoffset() is not None,'Plan timestamps require timezone')
+            if created.utcoffset() is None:
                 raise ValueError('Missing timezone')
-            signal=signal.astimezone(ZoneInfo('Asia/Tokyo'))
             created=created.astimezone(ZoneInfo('Asia/Tokyo'))
-            check(signal<=created, 'Plan created before its signal')
-            check(signal.date().isoformat()==p['signal_date'], 'Signal timestamp/date mismatch')
-            check((signal.hour,signal.minute)>=(15,30),'Signal before market close')
-            check(p['signal_date'] < p['order_date'] <= p['exit_deadline'],'Invalid plan session order')
+            if p['order_type']=='hypothetical_next_session_open_fixed_10_sessions':
+                check(not p['signal_date'] and not p['signal_confirmed_at'], 'Benchmark plan must not invent a signal')
+                check(not p['entry_limit'] and not p['stop_price'] and not p['target_price'], 'Benchmark plan must not invent limit/stop/target prices')
+                check(p['recommendation_date'] < p['order_date'] <= p['exit_deadline'],'Invalid benchmark plan session order')
+            else:
+                signal=datetime.fromisoformat(p['signal_confirmed_at'])
+                check(signal.utcoffset() is not None,'Plan timestamps require timezone')
+                if signal.utcoffset() is None:
+                    raise ValueError('Missing timezone')
+                signal=signal.astimezone(ZoneInfo('Asia/Tokyo'))
+                check(signal<=created, 'Plan created before its signal')
+                check(signal.date().isoformat()==p['signal_date'], 'Signal timestamp/date mismatch')
+                check((signal.hour,signal.minute)>=(15,30),'Signal before market close')
+                check(p['signal_date'] < p['order_date'] <= p['exit_deadline'],'Invalid plan session order')
+                check(number(p['stop_price'])<number(p['entry_limit'])<number(p['target_price']),'Invalid plan prices')
             check(created.date().isoformat() <= p['order_date'],'Plan registered retrospectively')
             if created.date().isoformat()==p['order_date']:
                 check(created.hour<9,'Order plan registered after opening')
-            check(number(p['stop_price'])<number(p['entry_limit'])<number(p['target_price']),'Invalid plan prices')
             check(number(p['shares'])>0 and number(p['shares'])%number(p['lot_size'])==0,'Invalid lot sizing')
             check((root/p['source_file']).is_file(), 'Plan source missing')
         except (ValueError,ZeroDivisionError,KeyError): errors.append('Invalid plan: '+p.get('plan_id',''))

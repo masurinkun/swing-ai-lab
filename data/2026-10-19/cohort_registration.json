@@ -1,0 +1,57 @@
+{
+  "cohort_id": "EXP-2026-10-09-C20261019",
+  "experiment_id": "EXP-2026-10-09",
+  "registered_at": "2026-10-19T08:20:00+09:00",
+  "recommendation_date": "2026-10-19",
+  "planned_first_session": "2026-10-20",
+  "fixed_exit_session_B_C": "2026-11-02",
+  "status": "registered_pending_start",
+  "available_cash_check": "Existing 2026-10-14 cohort uses less than JPY250,000 in B/C; this cohort reserves at most another JPY250,000 in each independent arm",
+  "allocations": [
+    {
+      "stock_code": "8766",
+      "slot_jpy": 250000,
+      "A": {
+        "watch_entry_low": 535,
+        "entry_limit": 540,
+        "stop": 520,
+        "target": 575,
+        "lot": 100,
+        "prospective_shares_base": 200,
+        "prospective_shares_stress": 200,
+        "planned_risk_base_jpy": 4438,
+        "planned_risk_stress_jpy": 4773,
+        "signal_window_start": "2026-10-19 close",
+        "last_signal_session": "2026-10-29",
+        "last_order_session": "2026-10-30",
+        "exit_deadline": "2026-11-02",
+        "status": "waiting_for_future_closed_bar_signal"
+      },
+      "B": {
+        "instrument": "8766",
+        "entry_session": "2026-10-20",
+        "holding_sessions": 10,
+        "shares_rule": "floor(min(250000, available cash)/(actual_open*(1+one_way_fee+slippage))/100)*100; do not infer open in advance"
+      },
+      "C": {
+        "instrument": "1306",
+        "lot_size": 10,
+        "entry_session": "2026-10-20",
+        "holding_sessions": 10,
+        "shares_rule": "floor(min(250000, available cash)/(actual_open*(1+one_way_fee+slippage))/10)*10; do not infer open in advance"
+      }
+    },
+    {
+      "stock_code": "6098",
+      "slot_jpy": 0,
+      "reason": "100-share lot at entry upper JPY18,000 requires JPY1,800,000 before costs, above fixed per-name JPY250,000 public-model cap; private execution constraints are not copied into public evidence"
+    }
+  ],
+  "notes": [
+    "Hypothetical research only; no broker account access or order execution",
+    "A plan is added only after a qualifying future closed bar and before the order session",
+    "B/C entry prices and quantities remain unknown until the actual 2026-10-20 open",
+    "No future fill or return is recorded at registration",
+    "Candidate mark returns remain tracked even where the model allocation is zero"
+  ]
+}

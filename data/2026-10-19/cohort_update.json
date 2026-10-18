@@ -1,0 +1,48 @@
+{
+  "cohort_id": "EXP-2026-10-09-C20261014",
+  "experiment_id": "EXP-2026-10-09",
+  "updated_at": "2026-10-19T08:08:53+09:00",
+  "price_source": "data/2026-10-19/4503_ohlcv.csv and data/2026-10-19/1306_ohlcv.csv",
+  "start_session": "2026-10-15",
+  "fixed_exit_session_B_C": "2026-10-28",
+  "status": "active",
+  "A": {
+    "status": "waiting_for_signal",
+    "signal_observation": "Neither 6758 nor 4503 touched its preregistered entry band on 2026-10-14 through 2026-10-16; no plan or hypothetical fill registered",
+    "cash_jpy": 1000000
+  },
+  "B": {
+    "instrument": "4503",
+    "open_20261015": 2310,
+    "shares_base": 100,
+    "shares_stress": 100,
+    "gross_notional_jpy": 231000,
+    "base_entry_fee_jpy": 231,
+    "base_entry_slippage_jpy": 231,
+    "stress_entry_fee_jpy": 231,
+    "stress_entry_slippage_jpy": 578,
+    "close_20261015": 2356.5,
+    "close_20261016": 2418.5
+  },
+  "C": {
+    "instrument": "1306",
+    "open_20261015": 424.7,
+    "lot_size": 10,
+    "shares_base": 580,
+    "shares_stress": 580,
+    "gross_notional_jpy": 246326,
+    "base_entry_fee_jpy": 246,
+    "base_entry_slippage_jpy": 246,
+    "stress_entry_fee_jpy": 246,
+    "stress_entry_slippage_jpy": 616,
+    "close_20261015": 421,
+    "close_20261016": 428.4
+  },
+  "D": {"status": "cash", "cash_jpy": 1000000},
+  "notes": [
+    "Hypothetical public research model only; no real order was placed",
+    "Entry prices are unadjusted actual opens and costs are recorded separately",
+    "Only entry-side costs are accrued while B/C remain open; exit-side costs are added at exit",
+    "A, B, C and D use independent JPY1,000,000 ledgers under each cost model"
+  ]
+}

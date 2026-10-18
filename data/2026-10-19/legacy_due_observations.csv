@@ -1,0 +1,2 @@
+recommendation_date,stock_code,horizon_sessions,base_date,base_open,end_date,end_close,price_only_return_pct,status,source_file
+2026-09-14,8058,20,2026-09-15,4966,2026-10-16,4726,-4.8329,legacy_unverified_observation_only,data/2026-10-19/8058_ohlcv.csv
