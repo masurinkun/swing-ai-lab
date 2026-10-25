@@ -1,0 +1,108 @@
+{
+  "as_of": "2026-10-26T08:04:24+09:00",
+  "last_closed_session": "2026-10-23",
+  "market": {
+    "regime": "Risk Off",
+    "strategy": "見送り中心",
+    "nikkei225": 62693.16,
+    "topix": 3965.81,
+    "growth250": 754.6,
+    "usd_jpy": 156.87,
+    "dow": 52215.16,
+    "nasdaq": 25955.34,
+    "sp500": 7623.68,
+    "sox": 10779.46,
+    "vix": 19.45,
+    "us10y_pct": 4.99,
+    "brent_usd": 116.72,
+    "wti_usd": 103.22,
+    "prime_breadth": {
+      "up": 480,
+      "down": 1053,
+      "unchanged": 13
+    },
+    "sectors": {
+      "up": 15,
+      "down": 18,
+      "leaders": [
+        "鉱業 +4.26%",
+        "不動産 +3.66%",
+        "医薬品 +2.80%",
+        "電気・ガス +2.42%",
+        "サービス +2.13%"
+      ],
+      "laggards": [
+        "非鉄金属 -11.02%",
+        "銀行 -6.24%",
+        "ガラス・土石 -6.20%",
+        "機械 -5.37%",
+        "電気機器 -4.84%"
+      ]
+    },
+    "foreign_flow": {
+      "period": "2026-10-13/2026-10-16",
+      "cash_net_100m_jpy": -3654.0144,
+      "futures_net_100m_jpy": -6273,
+      "combined_net_100m_jpy": -9927
+    }
+  },
+  "candidates": {
+    "1605": {
+      "name": "INPEX",
+      "earnings": "2026-11-12",
+      "unit": 100,
+      "split_check": "provider adjustment ratio 1.0 across saved window; company FAQ lists the last split as 2013-10-01",
+      "margin_ratio": 20.46,
+      "margin_date": "2026-10-16",
+      "entry": [
+        3720,
+        3750
+      ],
+      "stop": 3620,
+      "target1": 3950,
+      "target2": 4090,
+      "rough_rr": 1.5385,
+      "model_allocation": 0
+    },
+    "2503": {
+      "name": "キリンホールディングス",
+      "earnings": "2026-11-11",
+      "unit": 100,
+      "split_check": "provider adjustment ratio 1.0 across saved window; no split/merger found in current IR/TDnet review",
+      "margin_ratio": 3.44,
+      "margin_date": "2026-10-16",
+      "entry": [
+        2900,
+        2930
+      ],
+      "stop": 2850,
+      "target1": 3070,
+      "target2": 3180,
+      "rough_rr": 1.75,
+      "model_allocation": 0
+    }
+  },
+  "sources": {
+    "domestic_market": "https://s.kabutan.jp/news/n202610240062/",
+    "sector_market": "https://minkabu.jp/stock/277A/news/4641749",
+    "jpx_investor_type": "https://www.jpx.co.jp/markets/statistics-equities/investor-type/index.html",
+    "investor_flow_detail": "https://s.kabutan.jp/news/n202610221250/",
+    "us_market": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963",
+    "sox": "https://alfred.stlouisfed.org/series?seid=NASDAQSOX",
+    "vix": "https://finance.yahoo.com/quote/%5EVIX/history/",
+    "fx": "https://fx.minkabu.jp/news/382517",
+    "inpex_ir": "https://www.inpex.com/ir/index.html",
+    "inpex_results": "https://www.inpex.com/ir/financial/summary.html",
+    "inpex_returns": "https://www.inpex.com/ir/library/pdf/biz_report/topics1.html",
+    "inpex_margin": "https://finance.yahoo.co.jp/quote/1605.T/history?styl=margin",
+    "kirin_ir": "https://www.kirinholdings.com/jp/investors/",
+    "kirin_calendar": "https://www.kirinholdings.com/jp/investors/library/calendar/",
+    "kirin_finance": "https://s.kabutan.jp/stocks/2503/finance/",
+    "kirin_margin": "https://finance.yahoo.co.jp/quote/2503.T/history?styl=margin"
+  },
+  "limitations": [
+    "一目均衡表、個別空売り比率、定量的な業種別資金流入は独立取得できず補助データ欠損",
+    "個人の実手数料、余力、複合注文画面は未確認で公開物へ含めない",
+    "候補2社は公開研究モデル25万円枠で100株を買えず仮想割当0"
+  ]
+}

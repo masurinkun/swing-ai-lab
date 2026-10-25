@@ -1,0 +1,98 @@
+{
+  "experiment_id": "EXP-2026-10-09",
+  "updated_at": "2026-10-26T08:04:24+09:00",
+  "last_closed_session": "2026-10-23",
+  "status": "active",
+  "existing_cohort": {
+    "cohort_id": "EXP-2026-10-09-C20261014",
+    "B": {
+      "instrument": "4503",
+      "shares": 100,
+      "cash_base": 768538,
+      "cash_stress": 768191,
+      "fixed_exit": "2026-10-28"
+    },
+    "C": {
+      "instrument": "1306",
+      "shares": 580,
+      "cash_base": 753182,
+      "cash_stress": 752812,
+      "fixed_exit": "2026-10-28"
+    },
+    "A": "no signal through 2026-10-23"
+  },
+  "started_cohort": {
+    "cohort_id": "EXP-2026-10-09-C20261019",
+    "B": {
+      "instrument": "8766",
+      "entry_date": "2026-10-20",
+      "entry_open": 553.3,
+      "shares": 400,
+      "gross_notional": 221320,
+      "base_fee": 221,
+      "base_slippage": 221,
+      "stress_fee": 221,
+      "stress_slippage": 553,
+      "fixed_exit": "2026-11-02"
+    },
+    "C": {
+      "instrument": "1306",
+      "entry_date": "2026-10-20",
+      "entry_open": 426.2,
+      "shares": 580,
+      "gross_notional": 247196,
+      "base_fee": 247,
+      "base_slippage": 247,
+      "stress_fee": 247,
+      "stress_slippage": 618,
+      "fixed_exit": "2026-11-02"
+    },
+    "A": "8766 and 6098 entry bands not touched after recommendation through 2026-10-23"
+  },
+  "aggregate_cash": {
+    "B": {
+      "base": 546776,
+      "stress": 546097
+    },
+    "C": {
+      "base": 505492,
+      "stress": 504751
+    },
+    "A": {
+      "base": 1000000,
+      "stress": 1000000
+    },
+    "D": {
+      "base": 1000000,
+      "stress": 1000000
+    }
+  },
+  "daily_market_values": {
+    "2026-10-19": {
+      "b": 242500,
+      "c": 247718
+    },
+    "2026-10-20": {
+      "b": 461170,
+      "c": 489288
+    },
+    "2026-10-21": {
+      "b": 472490,
+      "c": 493696
+    },
+    "2026-10-22": {
+      "b": 477190,
+      "c": 487896
+    },
+    "2026-10-23": {
+      "b": 480080,
+      "c": 482908
+    }
+  },
+  "notes": [
+    "hypothetical public research only; no real order",
+    "entry-side costs accrued only while positions remain open",
+    "A/B/C/D are independent JPY1,000,000 ledgers",
+    "no retroactive A plan was created"
+  ]
+}

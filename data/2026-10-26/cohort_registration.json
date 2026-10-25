@@ -1,0 +1,32 @@
+{
+  "cohort_id": "EXP-2026-10-09-C20261026",
+  "experiment_id": "EXP-2026-10-09",
+  "registered_at": "2026-10-26T08:04:24+09:00",
+  "recommendation_date": "2026-10-26",
+  "planned_first_session": "2026-10-27",
+  "status": "registered_no_executable_allocation",
+  "allocations": [
+    {
+      "stock_code": "2503",
+      "slot_jpy": 0,
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "reason": "100-share lot at entry upper JPY2,930 requires JPY293,000 before costs, above fixed JPY250,000 per-name cap"
+    },
+    {
+      "stock_code": "1605",
+      "slot_jpy": 0,
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "reason": "100-share lot at entry upper JPY3,750 requires JPY375,000 before costs, above fixed JPY250,000 per-name cap"
+    }
+  ],
+  "notes": [
+    "candidate 5/10/20-session selection-effect marks remain tracked",
+    "no future fill or return recorded",
+    "D remains cash; no B/C trade is started for a zero-allocation cohort",
+    "hypothetical research only; no broker connection or order execution"
+  ]
+}
