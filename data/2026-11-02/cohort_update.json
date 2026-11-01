@@ -1,0 +1,60 @@
+{
+  "experiment_id": "EXP-2026-10-09",
+  "updated_at": "2026-11-02T08:06:07+09:00",
+  "last_closed_session": "2026-10-30",
+  "status": "active",
+  "closed_cohort": {
+    "cohort_id": "EXP-2026-10-09-C20261014",
+    "exit_date": "2026-10-28",
+    "B": {
+      "instrument": "4503",
+      "entry_price": 2310,
+      "exit_price": 2501,
+      "shares": 100,
+      "net_pnl_base_jpy": 18138,
+      "net_pnl_stress_jpy": 17416
+    },
+    "C": {
+      "instrument": "1306",
+      "entry_price": 424.7,
+      "exit_price": 420,
+      "shares": 580,
+      "net_pnl_base_jpy": -3706,
+      "net_pnl_stress_jpy": -4441
+    },
+    "A": "no qualifying signal through the fixed exit date; no trade",
+    "D": "cash"
+  },
+  "open_cohort": {
+    "cohort_id": "EXP-2026-10-09-C20261019",
+    "B": {
+      "instrument": "8766",
+      "shares": 400,
+      "entry_price": 553.3,
+      "fixed_exit": "2026-11-02"
+    },
+    "C": {
+      "instrument": "1306",
+      "shares": 580,
+      "entry_price": 426.2,
+      "fixed_exit": "2026-11-02"
+    },
+    "A": "8766 and 6098 entry bands not touched through 2026-10-30"
+  },
+  "aggregate_nav_2026_10_30": {
+    "A_base": 1000000,
+    "A_stress": 1000000,
+    "B_base": 1028136,
+    "B_stress": 1027082,
+    "C_base": 990116,
+    "C_stress": 989010,
+    "D_base": 1000000,
+    "D_stress": 1000000
+  },
+  "notes": [
+    "hypothetical public research only; no real order",
+    "the 2026-10-19 cohort remains open because its fixed exit is the 2026-11-02 close, which was not available at 08:00 JST",
+    "A/B/C/D are independent JPY1,000,000 ledgers",
+    "no retroactive A plan was created"
+  ]
+}
