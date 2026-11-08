@@ -1,0 +1,44 @@
+{
+  "experiment_id": "EXP-2026-10-09",
+  "updated_at": "2026-11-09T08:04:03+09:00",
+  "last_closed_session": "2026-11-06",
+  "status": "active",
+  "closed_cohort": {
+    "cohort_id": "EXP-2026-10-09-C20261019",
+    "exit_date": "2026-11-02",
+    "B": {
+      "instrument": "8766",
+      "entry_price": 553.3,
+      "exit_price": 575.6,
+      "shares": 400,
+      "net_pnl_base_jpy": 8018,
+      "net_pnl_stress_jpy": 7340
+    },
+    "C": {
+      "instrument": "1306",
+      "entry_price": 426.2,
+      "exit_price": 413,
+      "shares": 580,
+      "net_pnl_base_jpy": -8630,
+      "net_pnl_stress_jpy": -9360
+    },
+    "A": "no qualifying signal through the fixed exit date; no trade",
+    "D": "cash"
+  },
+  "aggregate_nav_2026_11_06": {
+    "A_base": 1000000,
+    "A_stress": 1000000,
+    "B_base": 1026156,
+    "B_stress": 1024756,
+    "C_base": 987664,
+    "C_stress": 986199,
+    "D_base": 1000000,
+    "D_stress": 1000000
+  },
+  "notes": [
+    "hypothetical public research only; no real order",
+    "the fixed exit used the 2026-11-02 close after that session was complete",
+    "A/B/C/D are independent JPY1,000,000 ledgers",
+    "only two comparison pairs are complete; strategy superiority is not evaluated"
+  ]
+}

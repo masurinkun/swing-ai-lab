@@ -1,0 +1,512 @@
+[
+  {
+    "stock_code": "1306",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/1306.T/history?page=1"
+    ],
+    "rows": 94,
+    "first_date": "2026-06-19",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/1306_ohlcv.csv",
+    "sha256": "dd0f236654615af45bd3e05c8f1c64139374221d5ed027c76b7c78971551781c",
+    "historical_dependency": "data/2026-11-02/1306_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "1605",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/1605.T/history?page=1"
+    ],
+    "rows": 97,
+    "first_date": "2026-06-16",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/1605_ohlcv.csv",
+    "sha256": "c0ae0f1dceb7f5d3cb9118938c4789dfaaa94e309e646f4aec07b2648ed645cd",
+    "historical_dependency": "data/2026-11-02/1605_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "2269",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/2269.T/history?page=1"
+    ],
+    "rows": 97,
+    "first_date": "2026-06-16",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/2269_ohlcv.csv",
+    "sha256": "aa218117a001584cbeec757c13c5cfd88eee63797f41f1d462275f2a306449d7",
+    "historical_dependency": "data/2026-11-02/2269_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "2503",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/2503.T/history?page=1"
+    ],
+    "rows": 97,
+    "first_date": "2026-06-16",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/2503_ohlcv.csv",
+    "sha256": "0178d14bf0530b0b0a721a774b87b3e847b5ee08353a9013ed52376b2fafca42",
+    "historical_dependency": "data/2026-11-02/2503_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "2914",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/2914.T/history?page=1"
+    ],
+    "rows": 97,
+    "first_date": "2026-06-16",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/2914_ohlcv.csv",
+    "sha256": "c878cd0daf64dcf46531f28338f6a282760f7ab0b100ad29f6f30b52d8a7097c",
+    "historical_dependency": "data/2026-11-02/2914_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "4063",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/4063.T/history?page=1"
+    ],
+    "rows": 97,
+    "first_date": "2026-06-16",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/4063_ohlcv.csv",
+    "sha256": "50403a3af522dee69edd34d16956ae83a3790f3b805fb0ce29e6c09326fee11c",
+    "historical_dependency": "data/2026-11-02/4063_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "4502",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/4502.T/history?page=1"
+    ],
+    "rows": 97,
+    "first_date": "2026-06-16",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/4502_ohlcv.csv",
+    "sha256": "910bc2ba3a4ba2a6c648e984cae3c04d091c58e2253b158cb234bc73f2d36977",
+    "historical_dependency": "data/2026-11-02/4502_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "4503",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/4503.T/history?page=1"
+    ],
+    "rows": 97,
+    "first_date": "2026-06-16",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/4503_ohlcv.csv",
+    "sha256": "e8e4bce49697b8f19a0de13f5be3a81f6d47401d337b2ee3101717e3cc3f7360",
+    "historical_dependency": "data/2026-11-02/4503_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "4519",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/4519.T/history?page=1"
+    ],
+    "rows": 97,
+    "first_date": "2026-06-16",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/4519_ohlcv.csv",
+    "sha256": "49cfebf342183ce088c209531fa776e9062f3a6bd3c9f4bff8a137be95c2fd5e",
+    "historical_dependency": "data/2026-11-02/4519_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "4568",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/4568.T/history?page=1"
+    ],
+    "rows": 97,
+    "first_date": "2026-06-16",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/4568_ohlcv.csv",
+    "sha256": "85cd891d48e7e965068481231d6223a218df23acb780446e53e60a95b1d982eb",
+    "historical_dependency": "data/2026-11-02/4568_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "4661",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/4661.T/history?page=1"
+    ],
+    "rows": 97,
+    "first_date": "2026-06-16",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/4661_ohlcv.csv",
+    "sha256": "62733c92a5d095931457a241a222f842a26491a870ea750370f5b9ff3c2d2c73",
+    "historical_dependency": "data/2026-11-02/4661_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "5020",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/5020.T/history?page=1"
+    ],
+    "rows": 97,
+    "first_date": "2026-06-16",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/5020_ohlcv.csv",
+    "sha256": "0dcfee1db20b56280f9db164b08afa853068bc0206bf0508538173e96b4f4d56",
+    "historical_dependency": "data/2026-11-02/5020_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "6098",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/6098.T/history?page=1"
+    ],
+    "rows": 97,
+    "first_date": "2026-06-16",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/6098_ohlcv.csv",
+    "sha256": "5211a068c7fa986ea65d421db96939ff32cf37772a207c0e0018e0e670895bc9",
+    "historical_dependency": "data/2026-11-02/6098_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "6301",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/6301.T/history?page=1"
+    ],
+    "rows": 97,
+    "first_date": "2026-06-16",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/6301_ohlcv.csv",
+    "sha256": "07801b6b2528f82e8bcb57117c345f011f609b081a6b05a4fe20c19d7149e296",
+    "historical_dependency": "data/2026-11-02/6301_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "6501",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/6501.T/history?page=1"
+    ],
+    "rows": 97,
+    "first_date": "2026-06-16",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/6501_ohlcv.csv",
+    "sha256": "1cdabf918ca8b4cfb27ece5ac607dc8e2470df066f7e028959010270d29f7312",
+    "historical_dependency": "data/2026-11-02/6501_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "6503",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/6503.T/history?page=1"
+    ],
+    "rows": 97,
+    "first_date": "2026-06-16",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/6503_ohlcv.csv",
+    "sha256": "a42020375a18c6d7e77df824804785de3e72d73839987535ea202710cf320c2d",
+    "historical_dependency": "data/2026-11-02/6503_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "6702",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/6702.T/history?page=1"
+    ],
+    "rows": 97,
+    "first_date": "2026-06-16",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/6702_ohlcv.csv",
+    "sha256": "b7f276678dfe3fb4d603bcce32386f7bd1e778f695da1ebd0e9b16cfbdaad401",
+    "historical_dependency": "data/2026-11-02/6702_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "6758",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/6758.T/history?page=1"
+    ],
+    "rows": 97,
+    "first_date": "2026-06-16",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/6758_ohlcv.csv",
+    "sha256": "28d5c5f44f04ecd587691f3a3cfdca432f29dd36dd7961b118bef55b3270aaea",
+    "historical_dependency": "data/2026-11-02/6758_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "6857",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/6857.T/history?page=1"
+    ],
+    "rows": 97,
+    "first_date": "2026-06-16",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/6857_ohlcv.csv",
+    "sha256": "6e2202d42eb9f2cc218c1d726dc890d9bf73c81beb4eecc8be65ce17b93bd869",
+    "historical_dependency": "data/2026-11-02/6857_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "7011",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/7011.T/history?page=1"
+    ],
+    "rows": 97,
+    "first_date": "2026-06-16",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/7011_ohlcv.csv",
+    "sha256": "4c5c8b80e6c8eba1ace4dfe669ff9125d237277b1550149acdc0bf9681f52963",
+    "historical_dependency": "data/2026-11-02/7011_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "7203",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/7203.T/history?page=1"
+    ],
+    "rows": 97,
+    "first_date": "2026-06-16",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/7203_ohlcv.csv",
+    "sha256": "6a34849aeac8f38cf500496a187bed0420e5606996d9a98de0ff632400a3cc82",
+    "historical_dependency": "data/2026-11-02/7203_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "7267",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/7267.T/history?page=1"
+    ],
+    "rows": 97,
+    "first_date": "2026-06-16",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/7267_ohlcv.csv",
+    "sha256": "d04e34e3732de52098d2b041991e92214a9ac02372e5fb23d6903d2e6358a6db",
+    "historical_dependency": "data/2026-11-02/7267_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "7751",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/7751.T/history?page=1"
+    ],
+    "rows": 97,
+    "first_date": "2026-06-16",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/7751_ohlcv.csv",
+    "sha256": "9bf85b2ea4ee6cb896c7b413285fe8430c21e2bf793b516186e8f9fbd7aabcbf",
+    "historical_dependency": "data/2026-11-02/7751_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "8001",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/8001.T/history?page=1"
+    ],
+    "rows": 97,
+    "first_date": "2026-06-16",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/8001_ohlcv.csv",
+    "sha256": "dbb5df4487104a64ad533008a7aa4b7d897bd0ab08cfe2334d7a38212427597d",
+    "historical_dependency": "data/2026-11-02/8001_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "8031",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/8031.T/history?page=1"
+    ],
+    "rows": 97,
+    "first_date": "2026-06-16",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/8031_ohlcv.csv",
+    "sha256": "91ac0f689e406f3e6b6523c0b692159a18f4d4afde1ca4657db2fa7166c61f45",
+    "historical_dependency": "data/2026-11-02/8031_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "8053",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/8053.T/history?page=1"
+    ],
+    "rows": 97,
+    "first_date": "2026-06-16",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/8053_ohlcv.csv",
+    "sha256": "c56a435ac343837c780469c0f943ef6796e1ca2ade67812e192c5423c2192770",
+    "historical_dependency": "data/2026-11-02/8053_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "8058",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/8058.T/history?page=1"
+    ],
+    "rows": 94,
+    "first_date": "2026-06-19",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/8058_ohlcv.csv",
+    "sha256": "c737e09bd4aedaa160463378555d63d529fd1532c625faec053281e25c94da76",
+    "historical_dependency": "data/2026-11-02/8058_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "8306",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/8306.T/history?page=1"
+    ],
+    "rows": 94,
+    "first_date": "2026-06-19",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/8306_ohlcv.csv",
+    "sha256": "72d0bc209def43a1b6c5716cd5b8cd50f7fdda135d03f2c8796737c5e2ca8d83",
+    "historical_dependency": "data/2026-11-02/8306_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "8316",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/8316.T/history?page=1"
+    ],
+    "rows": 94,
+    "first_date": "2026-06-19",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/8316_ohlcv.csv",
+    "sha256": "e7ae4bb1f949e9adbeecf1b347a719d8738c63769597b30b5ee62ad8c03f68cf",
+    "historical_dependency": "data/2026-11-02/8316_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "8411",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/8411.T/history?page=1"
+    ],
+    "rows": 94,
+    "first_date": "2026-06-19",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/8411_ohlcv.csv",
+    "sha256": "9451dbd1bf47f4f6e005a0d3c6356595d61f4e752fa6a4fe31d66a9919b910c3",
+    "historical_dependency": "data/2026-11-02/8411_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "8766",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/8766.T/history?page=1"
+    ],
+    "rows": 94,
+    "first_date": "2026-06-19",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/8766_ohlcv.csv",
+    "sha256": "5890cfd5ec60b9adb0c56948af0c2d5a10196a29115936d8f9bf47df6682f314",
+    "historical_dependency": "data/2026-11-02/8766_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "9101",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/9101.T/history?page=1"
+    ],
+    "rows": 94,
+    "first_date": "2026-06-19",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/9101_ohlcv.csv",
+    "sha256": "f83b5bfd3ab465925d2d4cfa2165d51aca75d045ca287b0f22fa9553e2877c2b",
+    "historical_dependency": "data/2026-11-02/9101_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "9432",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/9432.T/history?page=1"
+    ],
+    "rows": 94,
+    "first_date": "2026-06-19",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/9432_ohlcv.csv",
+    "sha256": "025f6a388f59bb21e51b12c2b31f83eb3907ffe18645a71b06c8cda338ae0a54",
+    "historical_dependency": "data/2026-11-02/9432_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  },
+  {
+    "stock_code": "9433",
+    "retrieved_at": "2026-11-09T08:04:03+09:00",
+    "source_urls": [
+      "https://finance.yahoo.co.jp/quote/9433.T/history?page=1"
+    ],
+    "rows": 94,
+    "first_date": "2026-06-19",
+    "last_date": "2026-11-06",
+    "failures": [],
+    "path": "data/2026-11-09/9433_ohlcv.csv",
+    "sha256": "bb332304497ffff81b6a5d7919717ba384b9bfb311e3b134ce8219542aef1303",
+    "historical_dependency": "data/2026-11-02/9433_ohlcv.csv",
+    "adjustment_note": "Provider raw OHLCV and adjusted close stored separately; latest page merged with prior archived history; corporate events independently checked for selected names"
+  }
+]

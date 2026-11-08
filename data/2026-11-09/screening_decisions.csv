@@ -1,0 +1,35 @@
+screening_date,stock_code,sector,technical_score,fundamental_score,supply_score,catalyst_score,risk_score,selected,hard_exclusion,penalty,source_file
+2026-11-09,1306,ETF,,,,,,false,benchmark_instrument,TOPIX連動ETFは比較群C専用で個別株候補に含めない,data/2026-11-09/research_facts.json
+2026-11-09,1605,鉱業,,,,,,false,downtrend_and_pre_signal_invalidation,11月5日安値3579円で既存Stop3620円を条件成立前に割り、主要移動平均線下・5日-15.85%,data/2026-11-09/research_facts.json
+2026-11-09,2269,食料品,,,,,,false,,75日線上だが20・25日線下、MACDがシグナル下。Risk Off下で明確な反発条件が弱い,data/2026-11-09/research_facts.json
+2026-11-09,2503,食料品,,,,,,false,earnings_blackout,11月11日決算で3営業日前から当日に該当。既存候補は10月28日にシグナル前無効,data/2026-11-09/research_facts.json
+2026-11-09,2914,食料品,,,,,,false,downtrend_at_first_pass,11月6日は6269円の単一価格で5日-15.30%、主要移動平均線を下回る,data/2026-11-09/research_facts.json
+2026-11-09,4063,化学,,,,,,false,downtrend_at_first_pass,主要移動平均線下、20日-14.79%、RSI26.68。反発未確認,data/2026-11-09/research_facts.json
+2026-11-09,4502,医薬品,,,,,,false,,11月2日の既存条件付き候補を継続。6400〜6450円へ未接触のため条件を切り上げず重複推薦しない,data/2026-11-09/research_facts.json
+2026-11-09,4503,医薬品,,,,,,false,post_earnings_price_discovery_unconfirmed,11月4日決算後の値幅が大きく、11月6日は大陰線。支持とStopの再確定待ち,data/2026-11-09/research_facts.json
+2026-11-09,4519,医薬品,,,,,,false,post_earnings_price_discovery_unconfirmed,主要線上だが直近5営業日の値幅が大きく、Risk Off下で安定した支持帯を確定できない,data/2026-11-09/research_facts.json
+2026-11-09,4568,医薬品,,,,,,false,,75日線下、11月6日は長い陰線。上位候補より支持抵抗とRRの再現性が弱い,data/2026-11-09/research_facts.json
+2026-11-09,4661,サービス業,,,,,,false,,11月2日の既存条件付き候補を継続。3330〜3380円へ未接触のため重複推薦しない,data/2026-11-09/research_facts.json
+2026-11-09,5020,石油・石炭製品,,,,,,false,downtrend_at_first_pass,主要線下・5日-18.50%、業種週間-17.61%。反発未確認,data/2026-11-09/research_facts.json
+2026-11-09,6098,サービス業,,,,,,false,downtrend_and_pre_signal_invalidation,11月4日安値17130円で既存Stop17400円を条件成立前に割り、20・25日線下,data/2026-11-09/research_facts.json
+2026-11-09,6301,機械,,,,,,false,downtrend_at_first_pass,主要線下・20日-25.90%、RSI23.65,data/2026-11-09/research_facts.json
+2026-11-09,6501,電気機器,,,,,,false,downtrend_at_first_pass,主要線下・20日-19.60%、RSI21.95,data/2026-11-09/research_facts.json
+2026-11-09,6503,電気機器,,,,,,false,downtrend_at_first_pass,主要線下・20日-14.91%、MACD弱含み,data/2026-11-09/research_facts.json
+2026-11-09,6702,電気機器,,,,,,false,downtrend_at_first_pass,主要線下・5日-25.54%、20日-22.03%,data/2026-11-09/research_facts.json
+2026-11-09,6758,電気機器,,,,,,false,post_earnings_price_discovery_unconfirmed,11月5日決算後で主要線上だが11月6日は高値から押し戻された。電気機器週間-12.71%下で支持再確認を優先,data/2026-11-09/research_facts.json
+2026-11-09,6857,電気機器,,,,,,false,downtrend_at_first_pass,25・20・75日線下、20日-32.15%、値幅過大,data/2026-11-09/research_facts.json
+2026-11-09,7011,機械,,,,,,false,downtrend_at_first_pass,主要線下・20日-23.58%、RSI19.61,data/2026-11-09/research_facts.json
+2026-11-09,7203,輸送用機器,30,24,13,9,4,true,,11月5日急騰と11月6日大陰線、Risk Off、信用買い残を減点。3220〜3300円の再反発だけを待つ,data/2026-11-09/research_facts.json
+2026-11-09,7267,輸送用機器,,,,,,false,earnings_blackout,11月10日決算の前営業日に該当。主要線上でも通常候補から除外,data/2026-11-09/research_facts.json
+2026-11-09,7751,電気機器,,,,,,false,,75日線上だが20・25日線下、MACDがシグナル下。明確な上昇再開待ち,data/2026-11-09/research_facts.json
+2026-11-09,8001,卸売業,,,,,,false,,75日線上だが20・25日線下、11月6日の大陰線後で支持帯未確認,data/2026-11-09/research_facts.json
+2026-11-09,8031,卸売業,,,,,,false,downtrend_at_first_pass,主要線下、5日-9.38%、決算後の価格発見未完了,data/2026-11-09/research_facts.json
+2026-11-09,8053,卸売業,,,,,,false,downtrend_at_first_pass,主要線下・20日-6.99%、25日線傾きも下向き,data/2026-11-09/research_facts.json
+2026-11-09,8058,卸売業,,,,,,false,post_earnings_price_discovery_unconfirmed,主要線上だが11月6日の広い陰線で、決算後支持とStopを根拠ある価格で固定できない,data/2026-11-09/research_facts.json
+2026-11-09,8306,銀行業,,,,,,false,downtrend_at_first_pass,主要線下・20日-10.99%、銀行業の11月6日下落も大きい,data/2026-11-09/research_facts.json
+2026-11-09,8316,銀行業,,,,,,false,downtrend_at_first_pass,主要線下・20日-10.79%、25日線傾き下向き,data/2026-11-09/research_facts.json
+2026-11-09,8411,銀行業,,,,,,false,downtrend_at_first_pass,主要線下・20日-16.72%、RSI35.70,data/2026-11-09/research_facts.json
+2026-11-09,8766,保険業,,,,,,false,post_breakout_support_unconfirmed,11月5日高値612.3円後に11月6日大陰線。既存期限終了後の新支持を確定できない,data/2026-11-09/research_facts.json
+2026-11-09,9101,海運業,,,,,,false,downtrend_at_first_pass,主要線下・5日-7.22%、業種週間-13.36%,data/2026-11-09/research_facts.json
+2026-11-09,9432,情報・通信業,,,,,,false,downtrend_at_first_pass,主要線下・5日-6.59%、RSI30.72,data/2026-11-09/research_facts.json
+2026-11-09,9433,情報・通信業,,,,,,false,downtrend_at_first_pass,主要線下・25日線下向き。11月6日大陰線で反発未確認,data/2026-11-09/research_facts.json

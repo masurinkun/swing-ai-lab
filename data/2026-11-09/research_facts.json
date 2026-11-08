@@ -1,0 +1,98 @@
+{
+  "screening_date": "2026-11-09",
+  "retrieved_at": "2026-11-09T08:04:03+09:00",
+  "last_closed_session": "2026-11-06",
+  "universe_count": 34,
+  "universe_scope": "33 liquid TSE Prime stocks plus TOPIX ETF 1306 as the comparison instrument",
+  "market": {
+    "nikkei225": 57434.77,
+    "nikkei_week_pct": -9.25,
+    "topix": 3707.99,
+    "topix_week_pct": -6.48,
+    "growth250": 709.12,
+    "growth250_week_pct": -9.15,
+    "prime_advancers": 21,
+    "prime_decliners": 1523,
+    "prime_unchanged": 7,
+    "usd_jpy": 158.49,
+    "dow": 51285.73,
+    "sp500": 7376.86,
+    "nasdaq": 24579.42,
+    "sox": 9390.25,
+    "sox_week_pct": -12.15,
+    "vix": 25.64,
+    "us_10y_pct": 4.859,
+    "wti_usd": 90.83,
+    "foreign_cash_net_jpy_million": -217600,
+    "foreign_cash_period": "2026-10-26/2026-10-30",
+    "regime": "Risk Off",
+    "center_strategy": "見送り中心"
+  },
+  "sector_week": {
+    "positive_count": 7,
+    "top": [
+      {"sector": "空運業", "return_pct": 6.21},
+      {"sector": "輸送用機器", "return_pct": 4.93},
+      {"sector": "ゴム製品", "return_pct": 2.63},
+      {"sector": "陸運業", "return_pct": 1.84},
+      {"sector": "不動産業", "return_pct": 1.45}
+    ],
+    "bottom": [
+      {"sector": "電気機器", "return_pct": -12.71},
+      {"sector": "海運業", "return_pct": -13.36},
+      {"sector": "鉱業", "return_pct": -15.48},
+      {"sector": "石油・石炭製品", "return_pct": -17.61},
+      {"sector": "非鉄金属", "return_pct": -20.16}
+    ]
+  },
+  "selected": {
+    "7203": {
+      "name": "トヨタ自動車",
+      "sector": "輸送用機器",
+      "close": 3338,
+      "entry_low": 3220,
+      "entry_high": 3300,
+      "stop": 3060,
+      "target1": 3750,
+      "target2": 3950,
+      "score": 80,
+      "data_confidence": "中",
+      "lot_size": 100,
+      "next_earnings_date": null,
+      "next_earnings_note": "The next earnings date was not yet filed on JPX or shown on Toyota's IR calendar as of 2026-11-09",
+      "margin_date": "2026-11-05",
+      "margin_buy_shares": 8996700,
+      "margin_sell_shares": 3556300,
+      "margin_ratio": 2.53,
+      "corporate_action_note": "Provider adjusted close/raw close factor was 1.0 throughout the stored period; Toyota's current share notices showed repurchase/cancellation updates and no split or consolidation",
+      "fundamentals": {
+        "six_month_revenue_jpy_100m": 269624,
+        "six_month_operating_profit_jpy_100m": 21911,
+        "six_month_parent_profit_jpy_100m": 22364,
+        "fy_revenue_forecast_jpy_100m": 535000,
+        "fy_operating_profit_forecast_jpy_100m": 39000,
+        "fy_parent_profit_forecast_jpy_100m": 35700,
+        "annual_dividend_forecast_jpy": 100,
+        "repurchase_limit_jpy_100m": 13000
+      }
+    }
+  },
+  "data_gaps": [
+    "Ichimoku values were not independently stored",
+    "Quantified sector fund-flow amounts were unavailable; sector price performance was used",
+    "Broker account UI, actual commissions and available cash remain unconfirmed",
+    "Next Toyota earnings date had not yet been officially scheduled"
+  ],
+  "sources": [
+    "https://finance.yahoo.co.jp/quote/7203.T/history?page=1",
+    "https://global.toyota/jp/ir/financial-results/",
+    "https://global.toyota/pages/global_toyota/ir/financial-results/2027_2q_presentation_jp.pdf",
+    "https://global.toyota/jp/ir/stock/share/",
+    "https://www.jpx.co.jp/markets/statistics-equities/investor-type/",
+    "https://toushi-kyokasho.com/market-data/",
+    "https://xhouseworkmanx.com/japan-stock-weekly-20261106/",
+    "https://finance.yahoo.com/quote/%5ESOX/history/",
+    "https://s.kabutan.jp/news/n202611061693/",
+    "https://kaburadar.jp/stocks/7203.html"
+  ]
+}
