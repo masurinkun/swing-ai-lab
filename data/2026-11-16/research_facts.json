@@ -1,0 +1,211 @@
+{
+  "screening_date": "2026-11-16",
+  "retrieved_at": "2026-11-16T07:59:23+09:00",
+  "last_closed_session": "2026-11-13",
+  "universe_count": 34,
+  "universe_scope": "33 liquid TSE Prime stocks plus TOPIX ETF 1306 as the comparison instrument",
+  "market": {
+    "nikkei225": 61142.35,
+    "nikkei_week_pct": 6.46,
+    "topix": 3941.57,
+    "topix_week_pct": 6.3,
+    "growth250": 728.12,
+    "growth250_week_pct": 2.68,
+    "prime_week_advancers": 1403,
+    "prime_week_decliners": 136,
+    "prime_week_unchanged": 6,
+    "prime_daily_advancers": 877,
+    "prime_daily_decliners": 619,
+    "prime_daily_unchanged": 55,
+    "usd_jpy": 159.69,
+    "dow": 52347.55,
+    "sp500": 7561.67,
+    "nasdaq": 25136.27,
+    "sox": 10146.32,
+    "sox_week_pct": 8.05,
+    "vix": 19.3,
+    "us_10y_pct": 5.15,
+    "wti_usd": 88.92,
+    "foreign_cash_net_jpy_million": -71400,
+    "foreign_cash_period": "2026-11-02/2026-11-06",
+    "regime": "Neutral",
+    "center_strategy": "押し目買い・見送り中心"
+  },
+  "sector_week": {
+    "positive_count": 33,
+    "top": [
+      {
+        "sector": "繊維製品",
+        "return_pct": 10.81
+      },
+      {
+        "sector": "建設業",
+        "return_pct": 10.41
+      },
+      {
+        "sector": "銀行業",
+        "return_pct": 9.18
+      },
+      {
+        "sector": "化学",
+        "return_pct": 8.42
+      },
+      {
+        "sector": "卸売業",
+        "return_pct": 8.22
+      }
+    ],
+    "selected_sector_returns": {
+      "卸売業": 8.22,
+      "電気機器": 7.84
+    },
+    "bottom": [
+      {
+        "sector": "情報・通信業",
+        "return_pct": 3.11
+      },
+      {
+        "sector": "輸送用機器",
+        "return_pct": 2.06
+      },
+      {
+        "sector": "食料品",
+        "return_pct": 0.95
+      }
+    ]
+  },
+  "selected": {
+    "8001": {
+      "name": "伊藤忠商事",
+      "sector": "卸売業",
+      "close": 2412,
+      "entry_low": 2320,
+      "entry_high": 2360,
+      "stop": 2250,
+      "target1": 2530,
+      "target2": 2650,
+      "score": 82,
+      "data_confidence": "中",
+      "lot_size": 100,
+      "next_earnings_note": "次回決算日は2026-11-16時点で公式確定日を確認できず。通常の第3四半期発表時期は2月上旬",
+      "margin_date": "2026-11-12",
+      "margin_buy_shares": 4953400,
+      "margin_sell_shares": 844600,
+      "margin_ratio": 5.86,
+      "corporate_action_note": "2026-01-01に1株を5株へ分割済み。保存期間2026-06-16以降のadjusted/raw close比は1.0",
+      "fundamentals": {
+        "six_month_revenue_jpy_million": 7929747,
+        "six_month_operating_profit_jpy_million": 413188,
+        "six_month_parent_profit_jpy_million": 580472,
+        "fy_parent_profit_forecast_jpy_million": 950000,
+        "annual_dividend_forecast_jpy": 44
+      }
+    },
+    "6758": {
+      "name": "ソニーグループ",
+      "sector": "電気機器",
+      "close": 4353,
+      "entry_low": 4170,
+      "entry_high": 4250,
+      "stop": 4060,
+      "target1": 4540,
+      "target2": 4700,
+      "score": 81,
+      "data_confidence": "中",
+      "lot_size": 100,
+      "next_earnings_date": "2027-02-04",
+      "margin_date": "2026-11-12",
+      "margin_buy_shares": 3201000,
+      "margin_sell_shares": 432000,
+      "margin_ratio": 7.4,
+      "corporate_action_note": "保存期間2026-06-16以降のadjusted/raw close比は1.0。選定期間中の分割・併合は検出なし",
+      "fundamentals": {
+        "six_month_revenue_jpy_million": 6267217,
+        "six_month_operating_profit_jpy_million": 1098828,
+        "six_month_parent_profit_jpy_million": 791764,
+        "fy_revenue_forecast_jpy_million": 13000000,
+        "fy_operating_profit_forecast_jpy_million": 1870000,
+        "fy_parent_profit_forecast_jpy_million": 1330000,
+        "annual_dividend_forecast_jpy": 35
+      }
+    }
+  },
+  "due_marks": [
+    {
+      "recommendation_date": "2026-10-14",
+      "stock_code": "6758",
+      "horizon": 20,
+      "base_open": 3829,
+      "end_date": "2026-11-12",
+      "end_close": 4281,
+      "return_pct": 11.8046
+    },
+    {
+      "recommendation_date": "2026-10-14",
+      "stock_code": "4503",
+      "horizon": 20,
+      "base_open": 2310,
+      "end_date": "2026-11-12",
+      "end_close": 2678,
+      "return_pct": 15.9307
+    },
+    {
+      "recommendation_date": "2026-10-26",
+      "stock_code": "2503",
+      "horizon": 10,
+      "base_open": 2967,
+      "end_date": "2026-11-10",
+      "end_close": 3060,
+      "return_pct": 3.1345
+    },
+    {
+      "recommendation_date": "2026-10-26",
+      "stock_code": "1605",
+      "horizon": 10,
+      "base_open": 4015,
+      "end_date": "2026-11-10",
+      "end_close": 3548,
+      "return_pct": -11.6314
+    },
+    {
+      "recommendation_date": "2026-11-02",
+      "stock_code": "4661",
+      "horizon": 5,
+      "base_open": 3500,
+      "end_date": "2026-11-10",
+      "end_close": 3729,
+      "return_pct": 6.5429
+    },
+    {
+      "recommendation_date": "2026-11-02",
+      "stock_code": "4502",
+      "horizon": 5,
+      "base_open": 6604,
+      "end_date": "2026-11-10",
+      "end_close": 6593,
+      "return_pct": -0.1666
+    }
+  ],
+  "data_gaps": [
+    "一目均衡表は独立保存していない",
+    "定量的セクター資金流入額は取得できず、33業種指数の週間騰落で代替",
+    "個人の注文画面、実手数料、利用可能余力は未確認",
+    "伊藤忠商事の次回決算確定日は公式サイトで確認できなかった"
+  ],
+  "sources": [
+    "https://finance.yahoo.co.jp/quote/8001.T/history?page=1",
+    "https://finance.yahoo.co.jp/quote/6758.T/history?page=1",
+    "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+    "https://www.sony.com/ja/SonyInfo/IR/library/er/pdf/26q2_sony.pdf",
+    "https://www.sony.com/ja/SonyInfo/IR/news/IR_Schedule2026_J.pdf",
+    "https://www.jpx.co.jp/markets/statistics-equities/investor-type/",
+    "https://www.iwaicosmo.co.jp/investment/market/",
+    "https://s.minkabu.jp/stock/3632/news/4665367",
+    "https://chartexchange.com/symbol/index-sox/historical/",
+    "https://finance.yahoo.com/quote/%5EVIX/history/",
+    "https://apnews.com/article/wall-street-stocks-dow-nasdaq-12c1e8155fb85c3c7b09e058ed6d3c74",
+    "https://markets.ft.markitdigital.com/data/commodities/tearsheet/historical?c=WTI+Crude+Oil",
+    "https://kaburadar.jp/stocks/6758.html",
+    "https://s.kabutan.jp/stocks/8001/historical_margins/daily/"
+  ]
+}
