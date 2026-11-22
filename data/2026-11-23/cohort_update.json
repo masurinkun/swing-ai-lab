@@ -1,0 +1,45 @@
+{
+  "experiment_id": "EXP-2026-10-09",
+  "updated_at": "2026-11-23T08:15:10+09:00",
+  "last_closed_session": "2026-11-20",
+  "status": "active",
+  "open_cohort": {
+    "cohort_id": "EXP-2026-10-09-C20261116",
+    "entry_date": "2026-11-17",
+    "fixed_exit_date": "2026-12-01",
+    "A": "8001 was invalidated before a qualifying signal; 6758 had a qualifying signal but zero public-model allocation",
+    "B": {"instrument": "8001", "entry_price": 2376.5, "shares": 100, "status": "open"},
+    "C": {"instrument": "1306", "entry_price": 408, "shares": 610, "status": "open"},
+    "D": "cash"
+  },
+  "cost_models": {
+    "hypothetical_base": {"one_way_fee_rate": 0.001, "one_way_slippage_rate": 0.001},
+    "hypothetical_stress": {"one_way_fee_rate": 0.001, "one_way_slippage_rate": 0.0035}
+  },
+  "cash_after_entry": {
+    "B_base": 788030,
+    "B_stress": 786036,
+    "C_base": 738286,
+    "C_stress": 736199,
+    "A_base": 1000000,
+    "A_stress": 1000000,
+    "D_base": 1000000,
+    "D_stress": 1000000
+  },
+  "nav_2026_11_20": {
+    "A_base": 1000000,
+    "A_stress": 1000000,
+    "B_base": 1012830,
+    "B_stress": 1010836,
+    "C_base": 973868,
+    "C_stress": 971781,
+    "D_base": 1000000,
+    "D_stress": 1000000
+  },
+  "notes": [
+    "hypothetical public research only; no real order",
+    "B/C actual 2026-11-17 opens and model quantities are fixed after the session",
+    "positions remain open; no future exit price or final P&L is recorded",
+    "A/B/C/D are independent JPY1,000,000 ledgers"
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "screening_date": "2026-11-23",
+  "retrieved_at": "2026-11-23T08:15:10+09:00",
+  "last_closed_session": "2026-11-20",
+  "universe_count": 34,
+  "market": {
+    "regime": "Risk Off",
+    "strategy": "見送り中心・確定反発後の押し目買い",
+    "nikkei225": 56436.65,
+    "nikkei_weekly_pct": -7.70,
+    "topix": 3674.22,
+    "topix_weekly_pct": -6.78,
+    "growth250": 638.22,
+    "growth250_weekly_pct": -12.35,
+    "usd_jpy": 158.52,
+    "us_10y_yield_pct": 4.93,
+    "dow": 48147.33,
+    "dow_weekly_pct": -8.0,
+    "nasdaq": 22617.73,
+    "nasdaq_weekly_pct": -10.0,
+    "sox": 8408.59,
+    "sox_weekly_pct": -17.1,
+    "vix": 35.89,
+    "wti": 83.98,
+    "prime_breadth_weekly": {"up": 183, "down": 1353, "unchanged": 9},
+    "sector_summary": "33業種すべて下落。相対上位は空運-0.33%、小売-0.44%、医薬品-0.50%、その他製品-1.14%、精密-1.52%。食料品-4.76%、保険-4.03%。",
+    "foreign_flow_latest": "11月9〜13日は海外投資家-3,125億円、個人-3,615億円、信託銀行+3,934億円、法人+5,773億円"
+  },
+  "selected": [
+    {
+      "rank": 1,
+      "stock_code": "4503",
+      "stock_name": "アステラス製薬",
+      "close": 2751.5,
+      "score": 88,
+      "entry_low": 2680,
+      "entry_high": 2720,
+      "stop": 2630,
+      "target1": 2855,
+      "target2": 2980,
+      "status": "conditional_wait_for_bullish_reversal",
+      "public_model_allocation": 0
+    },
+    {
+      "rank": 2,
+      "stock_code": "2269",
+      "stock_name": "明治ホールディングス",
+      "close": 4618,
+      "score": 87,
+      "entry_low": 4520,
+      "entry_high": 4570,
+      "stop": 4410,
+      "target1": 4810,
+      "target2": 4950,
+      "status": "conditional_wait_for_bullish_reversal",
+      "public_model_allocation": 0
+    },
+    {
+      "rank": 3,
+      "stock_code": "8766",
+      "stock_name": "東京海上ホールディングス",
+      "close": 577.5,
+      "score": 81,
+      "entry_low": 560,
+      "entry_high": 568,
+      "stop": 548,
+      "target1": 600,
+      "target2": 620,
+      "status": "2026-11-20 reversal confirmed; hypothetical next-session limit pending",
+      "public_model_allocation": 200
+    }
+  ],
+  "due_mark_returns": [
+    {"recommendation_date": "2026-10-19", "stock_code": "8766", "horizon_sessions": 20, "base_open": 553.3, "end_close": 584.1, "return_pct": 5.5666},
+    {"recommendation_date": "2026-10-19", "stock_code": "6098", "horizon_sessions": 20, "base_open": 18530, "end_close": 18195, "return_pct": -1.8079},
+    {"recommendation_date": "2026-11-02", "stock_code": "4661", "horizon_sessions": 10, "base_open": 3500, "end_close": 3872, "return_pct": 10.6286},
+    {"recommendation_date": "2026-11-02", "stock_code": "4502", "horizon_sessions": 10, "base_open": 6604, "end_close": 6931, "return_pct": 4.9515},
+    {"recommendation_date": "2026-11-09", "stock_code": "7203", "horizon_sessions": 5, "base_open": 3492, "end_close": 3428, "return_pct": -1.8328}
+  ],
+  "prior_candidate_status": [
+    {"stock_code": "4661", "status": "expired_no_entry", "detail": "Entry帯へ期限まで未接触"},
+    {"stock_code": "4502", "status": "expired_no_entry", "detail": "Entry帯へ期限まで未接触"},
+    {"stock_code": "7203", "status": "active_no_signal", "detail": "11月20日に帯へ接触したが陰線。11月24日まで当初条件を維持"},
+    {"stock_code": "8001", "status": "invalidated_before_signal", "detail": "11月20日安値2247円がStop2250円以下"},
+    {"stock_code": "6758", "status": "signal_confirmed_no_public_allocation", "detail": "11月17日に陽線反発条件成立。ただし1単元が25万円枠超過"}
+  ],
+  "data_gaps": [
+    "一目均衡表",
+    "個別空売り内訳",
+    "リアルタイムの定量的セクター資金流入",
+    "個人の実手数料・余力・注文画面",
+    "4503と2269の次回決算確定日"
+  ],
+  "sources": [
+    "https://www.iwaicosmo.co.jp/investment/market/",
+    "https://minkabu.jp/stock/2384/news/4670293",
+    "https://www.jpx.co.jp/markets/equities/volume-and-value/tvdivq000000derc-att/2_20261120.pdf",
+    "https://www.jpx.co.jp/markets/statistics-equities/investor-type/index.html",
+    "https://apnews.com/article/stock-markets-anthropic-ai-chips-boom-c4c3f4878b12989347f8a930ed813dad",
+    "https://www.cboe.com/data/quotes/vix/metrics",
+    "https://ycharts.com/indices/%5ESOX/level",
+    "https://commodityscope.com/prices/wti-crude-oil",
+    "https://www.boj.or.jp/statistics/market/forex/fxdaily/fxlist/fx261120.pdf",
+    "https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20261104/20261102562580.pdf",
+    "https://www2.jpx.co.jp/disc/22690/140120261111573238.pdf",
+    "https://tdnet-pdf.kabutan.jp/20261112/140120261015551092.pdf",
+    "https://www.tokiomarinehd.com/ir/event/presentation/2026/gi58a80000006boj-att/2Q_FY2026_Summary_Report_j.pdf",
+    "https://komori.app/company/8766/disclosure/20261118583037"
+  ]
+}

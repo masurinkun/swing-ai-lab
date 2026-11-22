@@ -1,0 +1,35 @@
+screening_date,stock_code,sector,technical_score,fundamental_score,supply_score,catalyst_score,risk_score,selected,hard_exclusion,penalty,source_file
+2026-11-23,1306,ETF,,,,,,false,benchmark_instrument,TOPIX連動ETFは比較群C専用,data/2026-11-23/research_facts.json
+2026-11-23,1605,鉱業,,,,,,false,downtrend_at_first_pass,主要移動平均線下・20日-15.45%。鉱業週間-9.58%で反転未確認,data/2026-11-23/research_facts.json
+2026-11-23,2269,食料品,31,24,17,9,6,true,,食料品週間-4.76%に対し個別+4.29%。高値圏とRisk Offを減点し4520〜4570円の反発だけ待つ,data/2026-11-23/research_facts.json
+2026-11-23,2503,食料品,,,,,,false,,主要線上だが5日-2.88%。急落週の上値抵抗と明治HDより弱い相対強度を考慮,data/2026-11-23/research_facts.json
+2026-11-23,2914,食料品,,,,,,false,downtrend_at_first_pass,主要移動平均線下・20日-29.62%・RSI29.50,data/2026-11-23/research_facts.json
+2026-11-23,4063,化学,,,,,,false,downtrend_at_first_pass,主要移動平均線下・20日-9.77%、MACD弱含み,data/2026-11-23/research_facts.json
+2026-11-23,4502,医薬品,,,,,,false,,11月2日候補はEntry未接触で11月17日に期限終了。RSI67.66の高値圏で直後に条件を切り上げない,data/2026-11-23/research_facts.json
+2026-11-23,4503,医薬品,31,25,18,8,6,true,,医薬品週間-0.50%の相対強度と信用売り超過を評価。高値圏とRisk Offを減点,data/2026-11-23/research_facts.json
+2026-11-23,4519,医薬品,,,,,,false,,主要線上だが5日-1.00%、アステラスより相対強度・信用需給・RR根拠で劣後,data/2026-11-23/research_facts.json
+2026-11-23,4568,医薬品,,,,,,false,downtrend_at_first_pass,20・25日線下、MACDがSignalを下回り上昇再開未確認,data/2026-11-23/research_facts.json
+2026-11-23,4661,サービス業,,,,,,false,,11月2日候補はEntry未接触で11月17日に期限終了。RSI68.08・決算後高値圏で追随しない,data/2026-11-23/research_facts.json
+2026-11-23,5020,石油・石炭製品,,,,,,false,downtrend_at_first_pass,主要移動平均線下・20日-19.57%・RSI29.56,data/2026-11-23/research_facts.json
+2026-11-23,6098,サービス業,,,,,,false,downtrend_at_first_pass,主要移動平均線下・20日-12.20%、MACD弱含み,data/2026-11-23/research_facts.json
+2026-11-23,6301,機械,,,,,,false,downtrend_at_first_pass,主要移動平均線下・20日-17.75%・RSI27.37,data/2026-11-23/research_facts.json
+2026-11-23,6501,電気機器,,,,,,false,downtrend_at_first_pass,主要移動平均線下・20日-18.11%、SOX週間-17.1%を警戒,data/2026-11-23/research_facts.json
+2026-11-23,6503,電気機器,,,,,,false,downtrend_at_first_pass,主要移動平均線下・20日-10.59%、MACD弱含み,data/2026-11-23/research_facts.json
+2026-11-23,6702,電気機器,,,,,,false,downtrend_at_first_pass,主要移動平均線下・20日-27.14%、25日線傾き-4.04%,data/2026-11-23/research_facts.json
+2026-11-23,6758,電気機器,,,,,,false,,11月16日の既存条件が11月17日に成立したが公開モデルは単元資金制約で割当0。重複推薦しない,data/2026-11-23/research_facts.json
+2026-11-23,6857,電気機器,,,,,,false,downtrend_at_first_pass,主要移動平均線下・5日-20.76%・20日-25.07%、SOX急落,data/2026-11-23/research_facts.json
+2026-11-23,7011,機械,,,,,,false,downtrend_at_first_pass,主要移動平均線下・20日-26.19%・RSI23.70,data/2026-11-23/research_facts.json
+2026-11-23,7203,輸送用機器,,,,,,false,,11月9日の既存条件を11月24日まで維持。11月20日はEntry帯へ接触したが陰線で条件未成立,data/2026-11-23/research_facts.json
+2026-11-23,7267,輸送用機器,,,,,,false,downtrend_at_first_pass,20・25日線下、5日-5.70%、上昇再開未確認,data/2026-11-23/research_facts.json
+2026-11-23,7751,電気機器,,,,,,false,,主要線上だが5日-0.75%、MACDとSignalが同水準。市場急落下でブレイク未確認,data/2026-11-23/research_facts.json
+2026-11-23,8001,卸売業,,,,,,false,pre_signal_stop_breach,11月16日候補は反発条件未成立のまま11月20日安値2247円がStop2250円を割り無効,data/2026-11-23/research_facts.json
+2026-11-23,8031,卸売業,,,,,,false,downtrend_at_first_pass,主要移動平均線下・5日-12.24%・20日-10.16%,data/2026-11-23/research_facts.json
+2026-11-23,8053,卸売業,,,,,,false,downtrend_at_first_pass,主要移動平均線下・5日-13.25%・20日-11.78%,data/2026-11-23/research_facts.json
+2026-11-23,8058,卸売業,,,,,,false,downtrend_at_first_pass,75日線下・5日-10.45%、11月20日の反転未確認,data/2026-11-23/research_facts.json
+2026-11-23,8306,銀行業,,,,,,false,downtrend_at_first_pass,主要移動平均線下・5日-12.98%・20日-10.35%,data/2026-11-23/research_facts.json
+2026-11-23,8316,銀行業,,,,,,false,downtrend_at_first_pass,主要移動平均線下・5日-10.35%・20日-7.41%,data/2026-11-23/research_facts.json
+2026-11-23,8411,銀行業,,,,,,false,downtrend_at_first_pass,主要移動平均線下・5日-8.79%、MACD弱含み,data/2026-11-23/research_facts.json
+2026-11-23,8766,保険業,28,25,12,10,6,true,,決算翌日の陽線反発と大規模自社株買いを評価。信用倍率13.13倍とRisk Offを減点,data/2026-11-23/research_facts.json
+2026-11-23,9101,海運業,,,,,,false,downtrend_at_first_pass,主要移動平均線下・20日-9.32%、25日線下向き,data/2026-11-23/research_facts.json
+2026-11-23,9432,情報・通信業,,,,,,false,downtrend_at_first_pass,主要移動平均線付近だが全て下回り20日-5.84%、反発条件不足,data/2026-11-23/research_facts.json
+2026-11-23,9433,情報・通信業,,,,,,false,downtrend_at_first_pass,主要移動平均線下・20日-1.84%、25日線下向き,data/2026-11-23/research_facts.json

@@ -15,3 +15,8 @@ recommendation_date,stock_code,horizon_sessions,base_date,base_open,end_date,end
 2026-10-26,1605,10,2026-10-27,4015,2026-11-10,3548,split_adjusted_price_only,-11.6314,verified,data/2026-11-16/1605_ohlcv.csv
 2026-11-02,4661,5,2026-11-04,3500,2026-11-10,3729,split_adjusted_price_only,6.5429,verified,data/2026-11-16/4661_ohlcv.csv
 2026-11-02,4502,5,2026-11-04,6604,2026-11-10,6593,split_adjusted_price_only,-0.1666,verified,data/2026-11-16/4502_ohlcv.csv
+2026-10-19,8766,20,2026-10-20,553.3,2026-11-17,584.1,split_adjusted_price_only,5.5666,verified,data/2026-11-23/8766_ohlcv.csv
+2026-10-19,6098,20,2026-10-20,18530,2026-11-17,18195,split_adjusted_price_only,-1.8079,verified,data/2026-11-23/6098_ohlcv.csv
+2026-11-02,4661,10,2026-11-04,3500,2026-11-17,3872,split_adjusted_price_only,10.6286,verified,data/2026-11-23/4661_ohlcv.csv
+2026-11-02,4502,10,2026-11-04,6604,2026-11-17,6931,split_adjusted_price_only,4.9515,verified,data/2026-11-23/4502_ohlcv.csv
+2026-11-09,7203,5,2026-11-10,3492,2026-11-16,3428,split_adjusted_price_only,-1.8328,verified,data/2026-11-23/7203_ohlcv.csv
